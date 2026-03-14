@@ -150,6 +150,27 @@ docker-compose run --rm app pytest tests/test_load.py -v -s
 
 Load test results are stored in [`test_results/load_test_results.txt`](test_results/load_test_results.txt).
 
+### Manual Testing UI
+
+A lightweight browser-based chat UI is included at [`test_ui.html`](test_ui.html) for manual testing. Open it directly in a browser while the server is running:
+
+```bash
+open test_ui.html
+```
+
+Features:
+- Switch between **Free**, **Premium**, and **Enterprise** tier users
+- Send messages and view responses with metadata (processing time, safety/rate-limit flags)
+- Safety-blocked and error responses are highlighted in red
+- Chat history resets when switching users
+
+Pre-configured test users:
+| Tier | User ID |
+|------|---------|
+| Free | `user_0000099` |
+| Premium | `user_0990218` |
+| Enterprise | `user_0000042` |
+
 ## API Endpoints
 
 | Endpoint | Method | Description |
