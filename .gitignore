@@ -10,3 +10,4 @@ build/
 .mypy_cache/
 .claude/
 CLAUDE.md
+PLAN.md
