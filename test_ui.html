@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ira Chat Tester</title>
+<title>Ira Chat</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; height: 100vh; display: flex; justify-content: center; align-items: center; }
@@ -38,7 +38,7 @@
 <body>
 <div class="container">
   <div class="header">
-    <h1>Ira Chat Tester</h1>
+    <h1>Ira Chat</h1>
     <p>Select a user tier, type a message, hit send.</p>
   </div>
   <div class="user-select">
@@ -72,6 +72,7 @@
     document.querySelectorAll('.user-btn').forEach(b => b.classList.remove('active'));
     el.classList.add('active');
     userId = uid;
+    msgBox.innerHTML = '';
     input.focus();
   }
 

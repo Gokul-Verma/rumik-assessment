@@ -8,6 +8,7 @@ Shutdown: drain analytics, stop health tracker, close connections.
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from app.analytics import pipeline as analytics
 from app.analytics.logger import get_logger, setup_logging
@@ -93,6 +94,12 @@ app = FastAPI(
 )
 
 # Middleware (order matters — outermost first)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 app.add_middleware(CorrelationIDMiddleware)
 
 # Routes

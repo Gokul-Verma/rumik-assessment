@@ -1,0 +1,1243 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.12, pytest-8.4.2, pluggy-1.6.0 -- /usr/local/bin/python3.13
+cachedir: .pytest_cache
+rootdir: /app
+configfile: pyproject.toml
+plugins: timeout-2.4.0, asyncio-0.26.0, Faker-40.8.0, anyio-4.12.1
+timeout: 60.0s
+timeout method: signal
+timeout func_only: False
+asyncio: mode=Mode.AUTO, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 3 items
+
+tests/test_load.py::TestNormalLoad::test_normal_load 2026-03-14 07:15:01 [info     ] free_routed_overflow           correlation_id=1e10cf2c-4843-426a-adc6-ed34bb4975de general_util=0.62 tier=free
+2026-03-14 07:15:01 [info     ] free_routed_overflow           correlation_id=9ee994ea-6f3b-4e78-9209-013b62cfe0b8 general_util=0.62 tier=free
+2026-03-14 07:15:01 [info     ] free_routed_overflow           correlation_id=a0bda17b-c3ce-4c72-99e9-49e2add2cb4f general_util=0.64 tier=free
+2026-03-14 07:15:01 [info     ] free_routed_overflow           correlation_id=6c0445ac-d617-49b5-aca3-a711fda528fd general_util=0.64 tier=free
+2026-03-14 07:15:01 [info     ] free_routed_overflow           correlation_id=1f9ca1b2-d1c4-4d57-994e-27a54d57d30e general_util=0.68 tier=free
+2026-03-14 07:15:01 [info     ] free_routed_overflow           correlation_id=d8527cfd-c894-4370-8e19-c5c6b5cfc05f general_util=0.74 tier=free
+2026-03-14 07:15:01 [info     ] free_routed_overflow           correlation_id=ad810a7e-e327-4314-806e-4407e07d30df general_util=0.74 tier=free
+2026-03-14 07:15:01 [info     ] request_completed              correlation_id=d0bcd2fe-e3d0-4dac-8a79-b5d9a23dcf7e duration_ms=189.92 method=POST path=/chat status=200
+2026-03-14 07:15:01 [info     ] request_completed              correlation_id=8dc49168-eb4d-4295-9793-fd784cc01c1c duration_ms=212.04 method=POST path=/chat status=200
+2026-03-14 07:15:01 [info     ] request_completed              correlation_id=620a04b3-33b9-402b-a7ec-771c8d4f9c22 duration_ms=238.46 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=69b8d8ce-806a-4668-a0da-5a980ba92c42 duration_ms=244.68 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=60e20a26-7469-4bb9-8152-396ddcfeee1c duration_ms=244.0 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=46973517-739b-4d5a-a32a-3b86d2c3fc05 duration_ms=259.78 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=b5b70eb5-f68d-4415-85cc-ea386622f6a5 duration_ms=265.22 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=65af0627-0989-4c1e-8c2e-71827f694db3 duration_ms=274.1 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=1038b616-a063-41ba-9558-3c2cea9321f3 duration_ms=280.87 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=04c3a334-3ee9-40d0-bcb1-a8b3546ece5a duration_ms=297.64 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=71f04512-9343-40db-a851-6b4e825c9446 duration_ms=298.0 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=ba860c41-07b4-4de5-99e2-b9e2f79ca835 duration_ms=306.56 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=1d087e30-614e-4a15-9603-0009716f47e4 duration_ms=344.07 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=f85b31de-6d5c-46b1-b45f-22d08c54cde5 duration_ms=344.38 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=9b218b9f-797d-4770-9454-0a63400cd03b duration_ms=350.64 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=568679a0-759f-44a9-a2aa-afb0fc5e04d2 duration_ms=352.81 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=4b8607b3-594b-4d70-8e9b-eabc151f163d duration_ms=356.75 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=647b7979-4e0d-49a7-9d06-16ee392e12f8 duration_ms=358.34 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=da689592-6da2-479a-a9f1-8e8946d3030d duration_ms=361.29 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=8cbbdd33-a737-4969-8a61-036f93f437d3 duration_ms=363.79 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=1e10cf2c-4843-426a-adc6-ed34bb4975de duration_ms=376.91 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=d8527cfd-c894-4370-8e19-c5c6b5cfc05f duration_ms=383.0 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=c9192bb6-7f09-4a9d-abbb-04b7510c66cc duration_ms=395.74 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=a0bda17b-c3ce-4c72-99e9-49e2add2cb4f duration_ms=395.42 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=48fc7e1a-cb2a-44e3-9a70-9b20942b06f4 duration_ms=399.82 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=7b816d3c-a8ef-4eec-9cb7-335dc0ea80e2 duration_ms=403.32 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=6d7c37c0-4881-4f5e-8347-20b90b987e7b duration_ms=408.15 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=47d89d93-a74a-4cd3-a786-be8c750e19a1 duration_ms=418.59 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=12ada451-22dc-48b0-9169-56ba32d9520c duration_ms=422.31 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=96c26c8a-faaf-4ea0-8e56-3f2d2b01c258 duration_ms=475.61 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=742cfe59-b68c-47ef-b2b2-9975aedf2004 duration_ms=475.63 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=9ee994ea-6f3b-4e78-9209-013b62cfe0b8 duration_ms=477.62 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=ba06126e-a5a6-46d7-9f47-3ca15f5e33b6 duration_ms=491.12 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=6c0445ac-d617-49b5-aca3-a711fda528fd duration_ms=489.71 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=6468784f-7f3c-473e-ae34-3a7c3b09419c duration_ms=495.23 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=b045fdcd-ec70-42ca-b500-5872bd03ea70 duration_ms=492.72 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=1b2aa37e-9dc7-4465-a841-ae3198ad0897 duration_ms=503.08 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=9d8f4ec2-3e0e-4ec1-bee5-51f65044b1b7 duration_ms=514.38 method=POST path=/chat status=200
+2026-03-14 07:15:02 [warning  ] slow_operation                 correlation_id=1f9ca1b2-d1c4-4d57-994e-27a54d57d30e duration_ms=520.37 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=1f9ca1b2-d1c4-4d57-994e-27a54d57d30e duration_ms=538.13 method=POST path=/chat status=200
+2026-03-14 07:15:02 [warning  ] slow_operation                 correlation_id=f65c1ef4-3513-4234-ba1a-18cfa28d66c3 duration_ms=535.78 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=f65c1ef4-3513-4234-ba1a-18cfa28d66c3 duration_ms=546.78 method=POST path=/chat status=200
+2026-03-14 07:15:02 [warning  ] slow_operation                 correlation_id=6be682af-2124-464e-a115-5254edf61b84 duration_ms=568.32 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=6be682af-2124-464e-a115-5254edf61b84 duration_ms=581.28 method=POST path=/chat status=200
+2026-03-14 07:15:02 [warning  ] slow_operation                 correlation_id=0e613d56-0f1b-4f12-9590-c02b728f24f2 duration_ms=573.26 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:02 [warning  ] slow_operation                 correlation_id=45b263b5-eba1-493e-97f1-6b1256b5004d duration_ms=567.3 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=0e613d56-0f1b-4f12-9590-c02b728f24f2 duration_ms=582.72 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=45b263b5-eba1-493e-97f1-6b1256b5004d duration_ms=581.48 method=POST path=/chat status=200
+2026-03-14 07:15:02 [warning  ] slow_operation                 correlation_id=0c0d77de-f1ed-4371-a3aa-ee78c5108dcd duration_ms=581.57 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=0c0d77de-f1ed-4371-a3aa-ee78c5108dcd duration_ms=594.51 method=POST path=/chat status=200
+2026-03-14 07:15:02 [warning  ] slow_operation                 correlation_id=96463bd4-69c5-4840-9448-9493b561ae43 duration_ms=586.83 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=96463bd4-69c5-4840-9448-9493b561ae43 duration_ms=595.88 method=POST path=/chat status=200
+2026-03-14 07:15:02 [warning  ] slow_operation                 correlation_id=f25c0e90-7f61-4bc2-8701-8dea29072402 duration_ms=582.46 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=f25c0e90-7f61-4bc2-8701-8dea29072402 duration_ms=595.79 method=POST path=/chat status=200
+2026-03-14 07:15:02 [warning  ] slow_operation                 correlation_id=5f20ffd1-f7ad-44fa-bc3f-62e1ae380f33 duration_ms=606.42 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=5f20ffd1-f7ad-44fa-bc3f-62e1ae380f33 duration_ms=617.43 method=POST path=/chat status=200
+2026-03-14 07:15:02 [warning  ] slow_operation                 correlation_id=ad810a7e-e327-4314-806e-4407e07d30df duration_ms=612.7 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:02 [warning  ] slow_operation                 correlation_id=5eb07b93-f91e-4a41-8b45-bbd2f1fa609c duration_ms=621.14 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=ad810a7e-e327-4314-806e-4407e07d30df duration_ms=628.0 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=5eb07b93-f91e-4a41-8b45-bbd2f1fa609c duration_ms=629.84 method=POST path=/chat status=200
+2026-03-14 07:15:02 [warning  ] slow_operation                 correlation_id=39c2f313-1ffe-4428-a216-5bc402b35917 duration_ms=613.67 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=39c2f313-1ffe-4428-a216-5bc402b35917 duration_ms=629.27 method=POST path=/chat status=200
+
+--- Normal Load Results ---
+  enterprise:
+    Requests: 5, Success: 5 (100.0%)
+    p50: 244.3ms
+    p95: 281.1ms
+    p99: 281.1ms
+  free:
+    Requests: 35, Success: 35 (100.0%)
+    p50: 490.0ms
+    p95: 629.5ms
+    p99: 630.4ms
+  premium:
+    Requests: 10, Success: 10 (100.0%)
+    p50: 298.3ms
+    p95: 400.1ms
+    p99: 400.1ms
+PASSED
+tests/test_load.py::TestHighLoad::test_high_load 2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=a100c15f-8090-4268-a790-9ef32d4f354f general_util=0.68 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=109f641a-cf4f-44b5-bddb-d7ab371a72e8 general_util=0.7 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=91542215-98fe-4ce5-bcca-24f68c4770d8 general_util=0.74 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=6b1e5f67-4d07-494d-b9cb-4f517376dcb0 general_util=0.74 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=8c7339b1-7717-40d0-9451-891b7d03f1d5 general_util=0.74 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=e5b63337-ce27-4767-a926-b7d346afc751 general_util=0.74 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=4ad3bafe-64bc-4b28-8004-594e6e142723 general_util=0.74 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=38e64f01-e770-49d1-99f5-7162412048c6 general_util=0.74 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=b9183e71-e695-45f1-a358-a62beea3ff22 general_util=0.74 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=b6f1ab93-78da-4d52-ab39-90f34b5aeb16 general_util=0.74 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=5f61a152-f303-451c-9327-fd769be34de3 general_util=0.78 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=b1adc430-7e00-4bd6-907a-8e7a51873fcc general_util=0.78 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=6fc5f453-7fc4-4ed2-b2c3-d9109f03b176 general_util=0.8 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=5536c157-e8d5-4d90-b723-7951ca5df6c9 general_util=0.8 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=92b912c5-746b-43ce-9e38-602e6db470e2 general_util=0.8 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=5b225d91-0e00-4bc2-a152-2ab2d560542b general_util=0.8 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=186258b3-ddfc-43cc-a78e-7e55074e300a general_util=0.8 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=e7ef885d-aceb-4ad8-b7e8-7ad7fbb4cac3 general_util=0.8 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=a8f75665-3c25-47b5-8728-d31509867b00 general_util=0.82 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=84948446-c96a-4868-bcb3-593335bcdf9a general_util=0.82 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=cbc10363-48d4-424f-944a-cc86a2bdfca5 general_util=0.82 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=ba09802f-14c8-4882-8765-b84ae503b513 general_util=0.82 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=6a75d2ef-c278-418e-816d-21a51ebc196a general_util=0.82 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=95c6bbf6-e933-4c80-a1ac-85e73cea6bc7 general_util=0.82 tier=free
+2026-03-14 07:15:02 [info     ] free_routed_overflow           correlation_id=c6d617fb-1494-4f7f-b645-1063bef5db50 general_util=0.82 tier=free
+2026-03-14 07:15:02 [info     ] general_pool_high              correlation_id=758a89f4-7740-4c82-9051-92212b189d26 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:02 [warning  ] free_shed                      correlation_id=1d0bd3e8-6758-4335-b560-60fcad0b1ef9 overflow_util=0.9333333333333333 shed_prob=0.6666666666666665 tier=free
+2026-03-14 07:15:02 [warning  ] request_shed                   correlation_id=1d0bd3e8-6758-4335-b560-60fcad0b1ef9 user_id=load_free_27
+2026-03-14 07:15:02 [warning  ] free_shed                      correlation_id=1fe5f73b-bf14-457e-93f6-0e13051176cb overflow_util=0.9333333333333333 shed_prob=0.6666666666666665 tier=free
+2026-03-14 07:15:02 [warning  ] request_shed                   correlation_id=1fe5f73b-bf14-457e-93f6-0e13051176cb user_id=load_free_54
+2026-03-14 07:15:02 [warning  ] free_shed                      correlation_id=6a0c4d0b-cf00-4483-aea3-ec468b151a36 overflow_util=0.9666666666666667 shed_prob=0.8333333333333331 tier=free
+2026-03-14 07:15:02 [warning  ] request_shed                   correlation_id=6a0c4d0b-cf00-4483-aea3-ec468b151a36 user_id=load_free_44
+2026-03-14 07:15:02 [warning  ] free_shed                      correlation_id=e8bd84ea-230f-4aad-a771-6b7c1c8a5c5b overflow_util=0.9666666666666667 shed_prob=0.8333333333333331 tier=free
+2026-03-14 07:15:02 [warning  ] request_shed                   correlation_id=e8bd84ea-230f-4aad-a771-6b7c1c8a5c5b user_id=load_free_7
+2026-03-14 07:15:02 [warning  ] free_shed                      correlation_id=5abfc9f8-9206-435c-ab34-585d788957f7 overflow_util=0.9666666666666667 shed_prob=0.8333333333333331 tier=free
+2026-03-14 07:15:02 [warning  ] request_shed                   correlation_id=5abfc9f8-9206-435c-ab34-585d788957f7 user_id=load_free_43
+2026-03-14 07:15:02 [warning  ] free_shed                      correlation_id=559f6ae3-550d-4969-aac6-342e05b29f12 overflow_util=0.9666666666666667 shed_prob=0.8333333333333331 tier=free
+2026-03-14 07:15:02 [warning  ] request_shed                   correlation_id=559f6ae3-550d-4969-aac6-342e05b29f12 user_id=load_free_41
+2026-03-14 07:15:02 [warning  ] free_shed                      correlation_id=d9f17410-2751-4237-98e3-55a031993571 overflow_util=0.9666666666666667 shed_prob=0.8333333333333331 tier=free
+2026-03-14 07:15:02 [warning  ] request_shed                   correlation_id=d9f17410-2751-4237-98e3-55a031993571 user_id=load_free_20
+2026-03-14 07:15:02 [warning  ] free_shed                      correlation_id=aa0c4058-d6e6-4803-8f04-a34a00e3476a overflow_util=0.9666666666666667 shed_prob=0.8333333333333331 tier=free
+2026-03-14 07:15:02 [warning  ] request_shed                   correlation_id=aa0c4058-d6e6-4803-8f04-a34a00e3476a user_id=load_free_8
+2026-03-14 07:15:02 [warning  ] free_shed                      correlation_id=2a910c71-a4c0-49ea-ba31-0ce5b90fc87d overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:02 [warning  ] request_shed                   correlation_id=2a910c71-a4c0-49ea-ba31-0ce5b90fc87d user_id=load_free_39
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=1d0bd3e8-6758-4335-b560-60fcad0b1ef9 duration_ms=110.73 method=POST path=/chat status=503
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=1fe5f73b-bf14-457e-93f6-0e13051176cb duration_ms=108.3 method=POST path=/chat status=503
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=6a0c4d0b-cf00-4483-aea3-ec468b151a36 duration_ms=109.31 method=POST path=/chat status=503
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=e8bd84ea-230f-4aad-a771-6b7c1c8a5c5b duration_ms=113.08 method=POST path=/chat status=503
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=5abfc9f8-9206-435c-ab34-585d788957f7 duration_ms=109.51 method=POST path=/chat status=503
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=559f6ae3-550d-4969-aac6-342e05b29f12 duration_ms=109.72 method=POST path=/chat status=503
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=d9f17410-2751-4237-98e3-55a031993571 duration_ms=111.76 method=POST path=/chat status=503
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=aa0c4058-d6e6-4803-8f04-a34a00e3476a duration_ms=113.17 method=POST path=/chat status=503
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=2a910c71-a4c0-49ea-ba31-0ce5b90fc87d duration_ms=110.09 method=POST path=/chat status=503
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=8bd06c18-5e30-4260-93b5-3a6116fe198d duration_ms=265.91 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=429e7a71-1567-4df5-bfb2-636a4b9028c4 duration_ms=265.55 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=41039543-52b8-494d-b8d6-b077910c063b duration_ms=297.74 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=d84f6bdd-8ee4-48c4-963a-6d800b7941a8 duration_ms=297.22 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=1f3018ca-691b-45be-9d47-4e9f2ae24ea0 duration_ms=297.81 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=b8451f41-0d96-40a6-adba-006237ab7b70 duration_ms=305.59 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=627bb4f2-68c1-4133-87aa-b6670b13bdae duration_ms=308.51 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=06b355fc-0af9-4e19-af29-d5341c06ff6f duration_ms=320.9 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=f8108f09-5e95-40e8-b734-f7885802bfa2 duration_ms=321.48 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=b1ba8918-f4df-4646-9ad9-3884932a83e8 duration_ms=338.12 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=c6dc2b57-f93e-4319-96b5-f1ec6f528a18 duration_ms=335.84 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=1d33cd03-fbde-452b-89a1-1ddfa05e5075 duration_ms=345.42 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=43b825a0-24df-4aa9-91a5-ea21a32d0db5 duration_ms=347.6 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=8b347d51-46d5-491e-9db9-fb062aaba061 duration_ms=345.84 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=7dfc1049-cdaa-44b4-b9c4-aaa6decabf97 duration_ms=354.32 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=bdffc9c4-7cf9-4fc8-af99-eb7d088f36ca duration_ms=357.53 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=bb2fc7fc-f339-4560-8a6f-27371787c7c7 duration_ms=356.93 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=fb9c458d-1b61-47d5-aa5f-fc9d3dcf51f9 duration_ms=371.55 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=363b2cf8-aa29-4f57-b7a3-ef2dac64766d duration_ms=371.42 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=758a89f4-7740-4c82-9051-92212b189d26 duration_ms=374.09 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=1a432da6-f42e-4faa-b4b2-a7e0e1659049 duration_ms=389.71 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=1493bb3c-7853-4992-8526-b830df4a8cc0 duration_ms=387.23 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=2410a02d-622d-4a33-ac19-c566ad584535 duration_ms=386.47 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=dc046fc7-c562-468e-9afd-9b95b91323c9 duration_ms=420.76 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=b796d8bc-59a2-47e0-bc6f-65923b66ae07 duration_ms=420.22 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=5f61a152-f303-451c-9327-fd769be34de3 duration_ms=442.27 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=4f4826fe-8662-44d3-aee4-a470fd17a369 duration_ms=439.83 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=9fe86ddc-1df4-43fd-b1fe-a20563f83a07 duration_ms=447.0 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=38e64f01-e770-49d1-99f5-7162412048c6 duration_ms=446.33 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=8ad7c5eb-191a-4e18-bac0-3dccba151a36 duration_ms=441.04 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=832ff75f-e729-4629-b343-e77e410299a1 duration_ms=443.92 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=6825a80b-89e7-438d-911d-e4a2cb07087d duration_ms=443.66 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=10e20309-800b-4e14-9edd-d4292817bf85 duration_ms=444.09 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=fbdd0ea2-0723-4e80-9ae9-4ca3da2feb0b duration_ms=444.9 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=460abcba-0073-4523-9fbe-9382c6e69484 duration_ms=457.56 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=b1adc430-7e00-4bd6-907a-8e7a51873fcc duration_ms=477.07 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=f2742a1e-7c6c-40bb-9d6e-1b36cab77881 duration_ms=479.58 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=3c47ade8-ec5d-455f-8038-4b96d843da0e duration_ms=479.6 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=18988b91-2807-42f8-a639-b8d5df7ed325 duration_ms=479.47 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=3fc03f09-a644-44fb-b46f-cc1223278951 duration_ms=480.97 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=6fc5f453-7fc4-4ed2-b2c3-d9109f03b176 duration_ms=485.11 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=55ed9418-8d1f-4a77-a202-cff065521339 duration_ms=483.71 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=b9183e71-e695-45f1-a358-a62beea3ff22 duration_ms=503.45 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=84948446-c96a-4868-bcb3-593335bcdf9a duration_ms=501.19 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=109f641a-cf4f-44b5-bddb-d7ab371a72e8 duration_ms=501.99 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=cbc10363-48d4-424f-944a-cc86a2bdfca5 duration_ms=508.63 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=dda8d29b-3a2d-4fce-922a-cbdd1adc49dd duration_ms=507.19 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=77def824-211d-439a-b560-aa91d413d032 duration_ms=510.93 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=a8f75665-3c25-47b5-8728-d31509867b00 duration_ms=519.15 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=d3a084b8-2c43-49cd-8b4a-f86b02fb489c duration_ms=517.13 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=1682d4c6-94f6-44ad-b17e-86cdb1c2a404 duration_ms=524.83 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=4ad3bafe-64bc-4b28-8004-594e6e142723 duration_ms=533.95 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=6b1e5f67-4d07-494d-b9cb-4f517376dcb0 duration_ms=531.18 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=8a8da088-42b0-4d5b-8573-f560b55a09e1 duration_ms=538.06 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=ba09802f-14c8-4882-8765-b84ae503b513 duration_ms=536.19 method=POST path=/chat status=200
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=e3d8b39e-ee72-4264-ac36-8393f70d5c7c duration_ms=540.02 method=POST path=/chat status=200
+2026-03-14 07:15:02 [warning  ] slow_operation                 correlation_id=92b912c5-746b-43ce-9e38-602e6db470e2 duration_ms=507.86 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=92b912c5-746b-43ce-9e38-602e6db470e2 duration_ms=553.21 method=POST path=/chat status=200
+2026-03-14 07:15:02 [warning  ] slow_operation                 correlation_id=5536c157-e8d5-4d90-b723-7951ca5df6c9 duration_ms=506.75 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:02 [info     ] request_completed              correlation_id=5536c157-e8d5-4d90-b723-7951ca5df6c9 duration_ms=549.85 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=6a75d2ef-c278-418e-816d-21a51ebc196a duration_ms=519.77 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=6a75d2ef-c278-418e-816d-21a51ebc196a duration_ms=562.78 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=75bb3c26-6751-406d-819d-bcf814d05e65 duration_ms=522.3 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=75bb3c26-6751-406d-819d-bcf814d05e65 duration_ms=566.1 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=c7a266dd-f749-4240-9acb-ce295c088f52 duration_ms=523.99 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=c7a266dd-f749-4240-9acb-ce295c088f52 duration_ms=567.73 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=1167d041-2077-46fe-8938-54ad6a8f1c0c duration_ms=529.8 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=1167d041-2077-46fe-8938-54ad6a8f1c0c duration_ms=572.75 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=5b225d91-0e00-4bc2-a152-2ab2d560542b duration_ms=538.02 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=5b225d91-0e00-4bc2-a152-2ab2d560542b duration_ms=588.0 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=186258b3-ddfc-43cc-a78e-7e55074e300a duration_ms=547.41 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=186258b3-ddfc-43cc-a78e-7e55074e300a duration_ms=591.0 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=c6d617fb-1494-4f7f-b645-1063bef5db50 duration_ms=545.88 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=3056074a-0360-44b1-a2a5-24b83110e6a0 duration_ms=549.31 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=c6d617fb-1494-4f7f-b645-1063bef5db50 duration_ms=590.39 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=3056074a-0360-44b1-a2a5-24b83110e6a0 duration_ms=594.54 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=91542215-98fe-4ce5-bcca-24f68c4770d8 duration_ms=557.74 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=91542215-98fe-4ce5-bcca-24f68c4770d8 duration_ms=601.68 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=8c7339b1-7717-40d0-9451-891b7d03f1d5 duration_ms=552.35 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=8c7339b1-7717-40d0-9451-891b7d03f1d5 duration_ms=602.42 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=21506e9e-f913-4366-80fe-36b42a3c3467 duration_ms=569.08 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=21506e9e-f913-4366-80fe-36b42a3c3467 duration_ms=620.35 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=e5b63337-ce27-4767-a926-b7d346afc751 duration_ms=573.51 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=e5b63337-ce27-4767-a926-b7d346afc751 duration_ms=621.9 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=da2d4117-5a78-4029-ba92-6bcc1985c313 duration_ms=590.44 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=da2d4117-5a78-4029-ba92-6bcc1985c313 duration_ms=635.67 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=538a0d3d-b40d-4e78-b0f2-c17284de682b duration_ms=598.37 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=538a0d3d-b40d-4e78-b0f2-c17284de682b duration_ms=648.11 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=cf1af22e-6ef3-4ebc-9fb5-4fdedb60382f duration_ms=601.58 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=cf1af22e-6ef3-4ebc-9fb5-4fdedb60382f duration_ms=649.39 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=e7ef885d-aceb-4ad8-b7e8-7ad7fbb4cac3 duration_ms=615.94 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=e7ef885d-aceb-4ad8-b7e8-7ad7fbb4cac3 duration_ms=659.42 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=1bdf6d2c-816c-487f-a011-f8f765bd9dfd duration_ms=614.51 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=1bdf6d2c-816c-487f-a011-f8f765bd9dfd duration_ms=660.43 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=b6f1ab93-78da-4d52-ab39-90f34b5aeb16 duration_ms=610.38 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=b6f1ab93-78da-4d52-ab39-90f34b5aeb16 duration_ms=660.52 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=a100c15f-8090-4268-a790-9ef32d4f354f duration_ms=621.18 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=a100c15f-8090-4268-a790-9ef32d4f354f duration_ms=664.79 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=1b40f847-a87f-4777-972c-2566d3fede0e duration_ms=627.83 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=1b40f847-a87f-4777-972c-2566d3fede0e duration_ms=676.49 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=b9133784-e050-40eb-9ae3-022a5e582193 duration_ms=637.03 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=b9133784-e050-40eb-9ae3-022a5e582193 duration_ms=682.07 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=563e7b16-f41a-4f7a-8dd4-ccd1e4d7f6ec duration_ms=642.31 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=563e7b16-f41a-4f7a-8dd4-ccd1e4d7f6ec duration_ms=685.17 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=95c6bbf6-e933-4c80-a1ac-85e73cea6bc7 duration_ms=667.26 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=95c6bbf6-e933-4c80-a1ac-85e73cea6bc7 duration_ms=710.44 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=b84f9046-0f81-4e8c-895e-00b6dde32986 general_util=0.66 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=5014ae30-04bd-415f-8d42-08449eb89d7b general_util=0.66 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=c5d9bfdd-512d-4628-ab7f-08fd42c32bfc general_util=0.72 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=7a426a65-6d78-4864-8238-60c5d1d04815 general_util=0.72 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=66d75090-ff9d-4c68-8858-7a94ebead25f general_util=0.72 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=0f25cedc-3b7c-4356-8b52-680398a931d5 general_util=0.76 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=7f4ad401-8d74-46ba-b40b-b4d39cf762c8 general_util=0.76 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=25d85fbb-cb79-40f7-a59e-7a2d6ada81be general_util=0.76 tier=free
+2026-03-14 07:15:03 [info     ] general_pool_high              correlation_id=4fbe25c9-0ba7-4d8f-88b3-c83d6b11c744 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=4c54e4cc-fec7-447d-88a9-d769d3597004 general_util=0.82 tier=free
+2026-03-14 07:15:03 [info     ] general_pool_high              correlation_id=9dc35f9c-3977-491f-b823-8e0a9457d481 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:03 [info     ] general_pool_high              correlation_id=8ba11a35-5200-48de-9e73-c66b0d0ea089 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=4cdf0086-2353-489c-951a-30d6614fdbe5 general_util=0.82 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=cea2fe2c-a96c-44ff-a63e-9e9710a48564 general_util=0.82 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=305787b0-16ec-4fff-ba28-dab2d5ef9afd general_util=0.82 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=464f949d-fcf1-405f-9cd0-375614f80918 general_util=0.82 tier=free
+2026-03-14 07:15:03 [info     ] general_pool_high              correlation_id=4d267d88-e3b5-44de-8440-50060fb5213d fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=e80e016d-16a9-4d2e-9aca-d7aa5c911377 general_util=0.82 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=f41f8188-fa62-4307-8c50-951193b52ce9 general_util=0.82 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=3446190e-a3bc-4005-8e6e-62fc93e37796 general_util=0.82 tier=free
+2026-03-14 07:15:03 [info     ] general_pool_high              correlation_id=027f04cf-b8a9-47a5-919f-cbab2a8d4e4f fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=a7e54497-caf5-4543-b616-38b3c870529c general_util=0.82 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=ba8fbe80-7aa3-414d-ab1d-1c2cfe0d5625 general_util=0.82 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=6425f7b5-72f9-43e4-86e3-bc7e138fe26f general_util=0.82 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=c15ff93e-8d21-48b6-9276-d7e73f3ae633 general_util=0.82 tier=free
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=8d39095b-5dce-4655-aa4b-345db57852db overflow_util=0.9333333333333333 shed_prob=0.6666666666666665 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=8d39095b-5dce-4655-aa4b-345db57852db user_id=load_free_43
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=adb1f3d3-13d4-4f34-8148-e92913b0e38a overflow_util=0.9333333333333333 shed_prob=0.6666666666666665 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=adb1f3d3-13d4-4f34-8148-e92913b0e38a user_id=load_free_24
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=264fd9e1-4612-43a8-beed-89e2ecfd842d overflow_util=0.9333333333333333 shed_prob=0.6666666666666665 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=264fd9e1-4612-43a8-beed-89e2ecfd842d user_id=load_free_57
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=3e7f56fc-7bf1-4bbc-9f5b-d75484bc1d08 overflow_util=0.9333333333333333 shed_prob=0.6666666666666665 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=3e7f56fc-7bf1-4bbc-9f5b-d75484bc1d08 user_id=load_free_10
+2026-03-14 07:15:03 [info     ] general_pool_high              correlation_id=aec7b0a3-f5ce-423a-b9cd-71f254290afd fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=12ffbb69-7c96-453a-a1f6-e59d8b45701d overflow_util=0.9666666666666667 shed_prob=0.8333333333333331 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=12ffbb69-7c96-453a-a1f6-e59d8b45701d user_id=load_free_46
+2026-03-14 07:15:03 [info     ] general_pool_high              correlation_id=14aa85a4-fd3f-4c1d-9111-7f72e17cf369 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=f875bfa3-62b4-4047-839b-b1ac1091763b overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=f875bfa3-62b4-4047-839b-b1ac1091763b user_id=load_free_7
+2026-03-14 07:15:03 [info     ] general_pool_high              correlation_id=080ca154-84f1-45d4-94db-fcd6445a148b fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=b0108873-f67f-4a56-bdfe-469f577ba386 overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=b0108873-f67f-4a56-bdfe-469f577ba386 user_id=load_free_29
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=30f22472-4afb-43a3-9d5f-ed699a576c6a overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=30f22472-4afb-43a3-9d5f-ed699a576c6a user_id=load_free_31
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=8d39095b-5dce-4655-aa4b-345db57852db duration_ms=61.41 method=POST path=/chat status=503
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=adb1f3d3-13d4-4f34-8148-e92913b0e38a duration_ms=65.14 method=POST path=/chat status=503
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=264fd9e1-4612-43a8-beed-89e2ecfd842d duration_ms=58.2 method=POST path=/chat status=503
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=3e7f56fc-7bf1-4bbc-9f5b-d75484bc1d08 duration_ms=69.25 method=POST path=/chat status=503
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=12ffbb69-7c96-453a-a1f6-e59d8b45701d duration_ms=61.33 method=POST path=/chat status=503
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=f875bfa3-62b4-4047-839b-b1ac1091763b duration_ms=69.98 method=POST path=/chat status=503
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=b0108873-f67f-4a56-bdfe-469f577ba386 duration_ms=64.57 method=POST path=/chat status=503
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=30f22472-4afb-43a3-9d5f-ed699a576c6a duration_ms=64.23 method=POST path=/chat status=503
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=360e129d-18bf-4e33-af8c-71347a6d5567 duration_ms=159.62 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=4f9d9615-950d-432a-91e3-54904b383496 duration_ms=169.73 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=f57db9ac-59a1-46e6-a792-a6d7b489c6cb duration_ms=181.36 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=30bea03b-5ae0-43d7-9600-1f2e4894223a duration_ms=193.06 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=80d578e1-1ca4-4366-b8ed-9916696556bf duration_ms=204.71 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=6b253842-6248-4650-b65d-9f6cbed3d83f duration_ms=205.02 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=178e6720-2c5e-45f7-8131-37a2fd5a8cbb duration_ms=215.61 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=5e7a536e-936f-4b7a-b5e4-23d31cd62c74 duration_ms=212.83 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=d57d8b0c-9681-4fb4-bbd9-5bad1582d4b0 duration_ms=240.65 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=d7015bda-1133-4e7b-a9d6-5fe5afe59abe duration_ms=238.63 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=4d267d88-e3b5-44de-8440-50060fb5213d duration_ms=240.55 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=ed0ccb65-230c-4d0b-8c32-98f5869b641d duration_ms=240.07 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=42a2b3ce-8eb3-40ca-a2fc-988c5f5ef1ab duration_ms=241.27 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=027f04cf-b8a9-47a5-919f-cbab2a8d4e4f duration_ms=252.07 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=ffaf7759-39cb-4433-9bbc-d5801797d70b duration_ms=269.19 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=36f75d67-a38f-4125-958f-8721b380f43e duration_ms=285.63 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=68f122cc-e6dc-4807-9612-7f9f6cd53439 duration_ms=286.79 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=6a54e213-62db-466e-93f5-7089bb7fbfa9 duration_ms=288.97 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=4fbe25c9-0ba7-4d8f-88b3-c83d6b11c744 duration_ms=296.12 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=aec7b0a3-f5ce-423a-b9cd-71f254290afd duration_ms=302.23 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=65332cd7-4442-4972-a1d1-8fd90b226e0b duration_ms=304.17 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=9dc35f9c-3977-491f-b823-8e0a9457d481 duration_ms=325.42 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=f1825eee-b689-474a-96fa-c19f65e652a7 duration_ms=350.54 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=9244ebfe-9010-4c60-b97b-f0abbe72ccea duration_ms=359.09 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=cb72fd0d-ff38-4fec-a75c-17bc39dbc38c duration_ms=346.48 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=fe541379-b3b0-4c46-8a6a-562780bacf1a duration_ms=361.47 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=14aa85a4-fd3f-4c1d-9111-7f72e17cf369 duration_ms=350.24 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=60d38826-a40a-4e64-8a77-2a2428db8103 duration_ms=361.17 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=5fb879fb-9a73-41b3-872c-d6c77b2681f9 duration_ms=362.35 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=8e1cc676-4231-486a-a13e-b4665ca7e4a5 duration_ms=364.52 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=a827b096-3391-4e17-a2ce-d80b87fbb9c4 duration_ms=360.63 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=a91b201d-dc14-453a-8f1a-d24f4cc7b3f1 duration_ms=366.07 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=f6f244a4-c189-4896-969b-828c4e976eb8 duration_ms=374.57 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=0f25cedc-3b7c-4356-8b52-680398a931d5 duration_ms=373.72 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=c5d9bfdd-512d-4628-ab7f-08fd42c32bfc duration_ms=376.01 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=dcf239cc-5c5b-4c55-8870-613ba1cbbcff duration_ms=387.6 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=4262d751-850e-414a-a8f8-82246fa3fe40 duration_ms=376.07 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=ad7f0452-fe74-447e-94c1-f16d10fbd07f duration_ms=388.44 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=164fdb30-1b95-4e47-a5d1-e411858dfedf duration_ms=386.8 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=2003a7e0-d2c6-47ec-a86e-9c93b58754f7 duration_ms=380.9 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=8ba11a35-5200-48de-9e73-c66b0d0ea089 duration_ms=386.29 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=b245999e-e910-47e6-82e9-a3e4177cbe06 duration_ms=392.0 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=08ea5b14-246a-493c-a0ee-b16eecc4e73f duration_ms=390.01 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=af17e35e-24fe-4511-b127-ebdfc8e394f2 duration_ms=411.61 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=464f949d-fcf1-405f-9cd0-375614f80918 duration_ms=409.29 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=a988d085-5ae9-4630-a6f2-8033d426f124 duration_ms=411.73 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=e3b7ca7e-8ebf-4cc9-bfcb-36582b8304de duration_ms=406.79 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=ba8fbe80-7aa3-414d-ab1d-1c2cfe0d5625 duration_ms=427.27 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=3446190e-a3bc-4005-8e6e-62fc93e37796 duration_ms=437.03 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=25d85fbb-cb79-40f7-a59e-7a2d6ada81be duration_ms=444.51 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=4cdf0086-2353-489c-951a-30d6614fdbe5 duration_ms=449.47 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=a53f3a12-49b7-4832-a45a-d1bb8a600876 duration_ms=463.61 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=7f4ad401-8d74-46ba-b40b-b4d39cf762c8 duration_ms=451.63 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=96d2591b-e0df-4347-9bd0-a13565979cc7 duration_ms=459.78 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=d39d026b-17ec-49d9-a828-674ca8b86fe1 duration_ms=461.9 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=6f9ec59b-1eef-4b57-9bf7-258e26734118 duration_ms=474.59 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=0b54c5f0-c7b9-4899-8d28-d9a050f546a9 duration_ms=467.41 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=f77c09a8-9fea-4935-891b-db7a20e0f702 duration_ms=477.06 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=f820f378-1476-494e-bd54-866b884dcf53 duration_ms=479.04 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=ff786c31-de25-4146-b554-6ddb0e47c5db duration_ms=488.06 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=4c54e4cc-fec7-447d-88a9-d769d3597004 duration_ms=485.93 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=275c1d93-1f28-4292-b7b6-3023506437ad duration_ms=489.03 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=8aab3688-6ef8-4cb7-bcbc-e2d845f88207 duration_ms=516.25 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=09f3c223-70e6-4e68-87d1-0277934aa6ff duration_ms=512.75 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=b84f9046-0f81-4e8c-895e-00b6dde32986 duration_ms=517.14 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=2eea85c5-c154-43ae-bdad-e314ac8b6845 duration_ms=507.38 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=2eea85c5-c154-43ae-bdad-e314ac8b6845 duration_ms=530.34 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=5a379cbc-895d-44b6-9064-fdf4812b3b98 duration_ms=508.87 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=5a379cbc-895d-44b6-9064-fdf4812b3b98 duration_ms=535.64 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=f41f8188-fa62-4307-8c50-951193b52ce9 duration_ms=507.54 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=f41f8188-fa62-4307-8c50-951193b52ce9 duration_ms=527.93 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=2a2c80b5-dfc3-469e-89cf-c2dfece9b033 duration_ms=509.46 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=2a2c80b5-dfc3-469e-89cf-c2dfece9b033 duration_ms=529.57 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=d7da41b8-dc01-4075-b46c-4e8713ad0abb duration_ms=519.06 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=d7da41b8-dc01-4075-b46c-4e8713ad0abb duration_ms=539.83 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=7a426a65-6d78-4864-8238-60c5d1d04815 duration_ms=521.58 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=7a426a65-6d78-4864-8238-60c5d1d04815 duration_ms=546.57 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=080ca154-84f1-45d4-94db-fcd6445a148b duration_ms=520.11 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=080ca154-84f1-45d4-94db-fcd6445a148b duration_ms=535.48 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=cea2fe2c-a96c-44ff-a63e-9e9710a48564 duration_ms=524.43 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=cea2fe2c-a96c-44ff-a63e-9e9710a48564 duration_ms=546.7 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=a7e54497-caf5-4543-b616-38b3c870529c duration_ms=541.1 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=a7e54497-caf5-4543-b616-38b3c870529c duration_ms=567.13 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=66d75090-ff9d-4c68-8858-7a94ebead25f duration_ms=547.05 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=66d75090-ff9d-4c68-8858-7a94ebead25f duration_ms=564.48 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=2027490d-a916-4427-8048-74b1f6e0c380 duration_ms=557.86 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=2027490d-a916-4427-8048-74b1f6e0c380 duration_ms=584.82 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=e80e016d-16a9-4d2e-9aca-d7aa5c911377 duration_ms=556.12 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=e80e016d-16a9-4d2e-9aca-d7aa5c911377 duration_ms=577.16 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=5014ae30-04bd-415f-8d42-08449eb89d7b duration_ms=561.37 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=5014ae30-04bd-415f-8d42-08449eb89d7b duration_ms=581.78 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=57707098-ae20-4276-b90b-d7b1d24c43b6 duration_ms=583.78 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=57707098-ae20-4276-b90b-d7b1d24c43b6 duration_ms=606.31 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=305787b0-16ec-4fff-ba28-dab2d5ef9afd duration_ms=594.28 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=305787b0-16ec-4fff-ba28-dab2d5ef9afd duration_ms=613.6 method=POST path=/chat status=200
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=c15ff93e-8d21-48b6-9276-d7e73f3ae633 duration_ms=595.64 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [warning  ] slow_operation                 correlation_id=6425f7b5-72f9-43e4-86e3-bc7e138fe26f duration_ms=598.59 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=c15ff93e-8d21-48b6-9276-d7e73f3ae633 duration_ms=615.57 method=POST path=/chat status=200
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=6425f7b5-72f9-43e4-86e3-bc7e138fe26f duration_ms=626.02 method=POST path=/chat status=200
+
+--- High Load Results ---
+  enterprise:
+    Requests: 20, Success: 20 (100.0%)
+    p50: 266.0ms
+    p95: 354.7ms
+    p99: 354.7ms
+  free:
+    Requests: 120, Success: 103 (85.8%)
+    p50: 486.3ms
+    p95: 660.8ms
+    p99: 685.5ms
+  premium:
+    Requests: 40, Success: 40 (100.0%)
+    p50: 358.4ms
+    p95: 507.5ms
+    p99: 535.9ms
+PASSED
+tests/test_load.py::TestExtremeLoad::test_extreme_load 2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=211d293b-1641-4f2c-b9e0-e9d0b40f320d general_util=0.62 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=6f7e3635-9a61-4172-bf6f-62a8c223ad5b general_util=0.62 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=f8f21a92-cbbd-43ed-9cbd-f8f13b971465 general_util=0.7 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=eefacf5b-43af-4b78-8abd-6a28b1cfa8c6 general_util=0.7 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=c971159e-804c-4ceb-aaac-af930e8e5047 general_util=0.7 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=af63fffd-5018-434a-be2b-d27717da81b3 general_util=0.7 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=287fa42c-b3e7-4e51-a0e4-ac5375547f73 general_util=0.7 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=0d0cf94c-0f68-4679-b1f9-db46ccb5ce34 general_util=0.7 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=a39fb031-3c70-47da-a1d9-76f4a071f6cb general_util=0.7 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=53168e93-7a11-4c1e-a0cf-54b596fb79f5 general_util=0.7 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=0feaab9b-babd-46d0-9352-4d006171c924 general_util=0.7 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=a4f6fd05-40d1-4090-92b9-99481ecf8830 general_util=0.7 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=8d42a1d1-7679-4470-947f-3bc37500d733 general_util=0.7 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=33258bf5-f75a-49e0-bdb6-38f370551dde general_util=0.7 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=8d4e6748-919d-446d-88c7-869662aa7077 general_util=0.7 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=8e476707-d6d9-47ca-9a48-90736751f88d general_util=0.7 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=1ca0a9e0-9ee5-4a88-b2f3-8a1eb6a91f2a general_util=0.7 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=6aa341fb-1773-413a-9bf3-6635f2bd4c04 general_util=0.7 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=f8bbdc98-233c-4baf-9be9-7c8df333c4b5 general_util=0.7 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=9059740d-ef7d-4b09-8e8e-2cc0b2bdc484 general_util=0.7 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=5fbbaf6e-3c08-43eb-b47b-61b9d41bac69 general_util=0.72 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=ac077f9e-3216-4910-b6eb-c4c959a57509 general_util=0.72 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=af1e2f29-5db3-4b83-a49c-559b9aa3ba90 general_util=0.72 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=f1381096-3c65-4131-8ca0-3ebb6e076364 general_util=0.72 tier=free
+2026-03-14 07:15:03 [info     ] free_routed_overflow           correlation_id=80b48a5d-f305-4ece-bf58-cb64413203ba general_util=0.72 tier=free
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=6bfddf8c-4e74-4964-8fb8-46c0ed30d92b overflow_util=0.8333333333333334 shed_prob=0.16666666666666663 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=6bfddf8c-4e74-4964-8fb8-46c0ed30d92b user_id=load_free_48
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=432e4294-b822-4873-84a4-aad59e9f6cee overflow_util=0.8333333333333334 shed_prob=0.16666666666666663 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=432e4294-b822-4873-84a4-aad59e9f6cee user_id=load_free_37
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=b2be62b7-8518-4d47-bcf5-0112fef166b0 overflow_util=0.8333333333333334 shed_prob=0.16666666666666663 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=b2be62b7-8518-4d47-bcf5-0112fef166b0 user_id=load_free_35
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=de5ef3d2-e5e1-42b8-bdd8-d70f3c84215a overflow_util=0.8333333333333334 shed_prob=0.16666666666666663 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=de5ef3d2-e5e1-42b8-bdd8-d70f3c84215a user_id=load_free_34
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=b2b72daa-43d6-4548-89bc-6d555105225c overflow_util=0.8333333333333334 shed_prob=0.16666666666666663 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=b2b72daa-43d6-4548-89bc-6d555105225c user_id=load_free_21
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=5de0b995-bb79-4e8e-9fee-d85b04aab653 overflow_util=0.8666666666666667 shed_prob=0.33333333333333326 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=5de0b995-bb79-4e8e-9fee-d85b04aab653 user_id=load_free_27
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=db553224-2db9-4304-a2cf-f26ed57a6480 overflow_util=0.8666666666666667 shed_prob=0.33333333333333326 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=db553224-2db9-4304-a2cf-f26ed57a6480 user_id=load_free_43
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=c09e46e1-4a69-449c-a16d-8ad817abf453 overflow_util=0.8666666666666667 shed_prob=0.33333333333333326 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=c09e46e1-4a69-449c-a16d-8ad817abf453 user_id=load_free_44
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=7592ecb8-f71b-4129-bd7d-57aac2b52ee6 overflow_util=0.8666666666666667 shed_prob=0.33333333333333326 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=7592ecb8-f71b-4129-bd7d-57aac2b52ee6 user_id=load_free_42
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=c3db8acd-6544-4a8b-bf72-024502e177ff overflow_util=0.9333333333333333 shed_prob=0.6666666666666665 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=c3db8acd-6544-4a8b-bf72-024502e177ff user_id=load_free_49
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=1a29c27a-508d-4111-a3c4-a45d750c1f3f overflow_util=0.9666666666666667 shed_prob=0.8333333333333331 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=1a29c27a-508d-4111-a3c4-a45d750c1f3f user_id=load_free_45
+2026-03-14 07:15:03 [warning  ] free_shed                      correlation_id=7c6be854-4e9d-4ae5-8efc-c98df9cc690f overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:03 [warning  ] request_shed                   correlation_id=7c6be854-4e9d-4ae5-8efc-c98df9cc690f user_id=load_free_0
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=6bfddf8c-4e74-4964-8fb8-46c0ed30d92b duration_ms=72.24 method=POST path=/chat status=503
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=432e4294-b822-4873-84a4-aad59e9f6cee duration_ms=73.39 method=POST path=/chat status=503
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=b2be62b7-8518-4d47-bcf5-0112fef166b0 duration_ms=73.63 method=POST path=/chat status=503
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=de5ef3d2-e5e1-42b8-bdd8-d70f3c84215a duration_ms=73.76 method=POST path=/chat status=503
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=b2b72daa-43d6-4548-89bc-6d555105225c duration_ms=75.07 method=POST path=/chat status=503
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=5de0b995-bb79-4e8e-9fee-d85b04aab653 duration_ms=74.6 method=POST path=/chat status=503
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=db553224-2db9-4304-a2cf-f26ed57a6480 duration_ms=73.12 method=POST path=/chat status=503
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=c09e46e1-4a69-449c-a16d-8ad817abf453 duration_ms=73.06 method=POST path=/chat status=503
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=7592ecb8-f71b-4129-bd7d-57aac2b52ee6 duration_ms=73.3 method=POST path=/chat status=503
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=c3db8acd-6544-4a8b-bf72-024502e177ff duration_ms=72.7 method=POST path=/chat status=503
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=1a29c27a-508d-4111-a3c4-a45d750c1f3f duration_ms=73.24 method=POST path=/chat status=503
+2026-03-14 07:15:03 [info     ] request_completed              correlation_id=7c6be854-4e9d-4ae5-8efc-c98df9cc690f duration_ms=78.41 method=POST path=/chat status=503
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=e886f76b-9dd9-468b-9982-dc6d71665fea duration_ms=219.85 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=355fddfb-bd5c-4003-9b57-8a79496dea7c duration_ms=220.53 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=06ee3139-fec8-4da7-ae80-cc7a2f19af1c duration_ms=222.2 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=a4dabfb0-1b47-4dbf-bf17-f4942ea5a367 duration_ms=222.17 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=8099f0f8-db84-43f4-996b-d016a51d2ece duration_ms=229.11 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=1af24769-9fac-4516-a727-1fcf3bb14401 duration_ms=238.63 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=d3075855-77f3-4f5b-89bc-0e6a0aece9bc duration_ms=237.17 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=e5134681-5df2-4870-bb9b-fbccf84fb5b7 duration_ms=253.75 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=64dab421-74a6-422f-9b8f-f67f97d1c8a0 duration_ms=258.86 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=ed3fc013-903a-4978-a0e6-9d37f26bf5fb duration_ms=266.46 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=49a59c77-bb2a-419d-b2c8-e70f2732373a duration_ms=276.77 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=2d91757a-cfef-4eae-9ac9-13bf51283519 duration_ms=285.96 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=041b520a-975d-40d1-8c45-959647233e8d duration_ms=301.55 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=3fc31118-c28f-44d7-8ca0-b0fa115bb47f duration_ms=306.28 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=a991cc81-1e9d-4b6c-ba9e-b6b6fb65bef9 duration_ms=306.03 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=d0b26cc8-0225-49a2-b52a-6055b55c62a6 duration_ms=312.53 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=2247f2b8-ff1f-4a79-a2cc-872a70984f74 duration_ms=326.76 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=00071ac5-73df-40f5-af67-9a63714dd44b duration_ms=332.13 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=fa67fbc4-c7c8-476b-83e4-a271ae19133f duration_ms=345.05 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=aaf22f67-197a-4649-a68e-2b03527fd1c7 duration_ms=343.48 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=c971159e-804c-4ceb-aaac-af930e8e5047 duration_ms=359.65 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=86180e82-c7bc-4bfe-88dc-6a68f7abba64 duration_ms=369.52 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=eb0be998-0372-4e08-ba7e-cb56f48e90ef duration_ms=369.12 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=3c7403bf-6c3e-449c-ae5a-633096ae3ea5 duration_ms=370.86 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=e6cf6aa4-3019-4b0a-a0c6-6eaf5791120b duration_ms=376.92 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=1ca0a9e0-9ee5-4a88-b2f3-8a1eb6a91f2a duration_ms=382.83 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=8e476707-d6d9-47ca-9a48-90736751f88d duration_ms=383.95 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=eefacf5b-43af-4b78-8abd-6a28b1cfa8c6 duration_ms=390.05 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=f7c5d5ab-60cf-449d-b748-2fcd1b1ecf3c duration_ms=389.55 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=211d293b-1641-4f2c-b9e0-e9d0b40f320d duration_ms=402.09 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=a39fb031-3c70-47da-a1d9-76f4a071f6cb duration_ms=402.35 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=c817283f-9888-4d77-89de-b724e3e8c338 duration_ms=406.36 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=5fbbaf6e-3c08-43eb-b47b-61b9d41bac69 duration_ms=412.74 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=85c3026c-fd34-4bea-ab33-04eeb776d3ee duration_ms=409.15 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=33258bf5-f75a-49e0-bdb6-38f370551dde duration_ms=414.59 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=cadadba4-256c-4844-bec2-8f7c2ca40b29 duration_ms=418.01 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=f1381096-3c65-4131-8ca0-3ebb6e076364 duration_ms=423.25 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=26da91fa-fe37-4f0f-8ce9-daccfc1a1153 duration_ms=423.62 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=4e807eab-0a95-4931-b670-eb2352bf88ee duration_ms=436.25 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=c1e9f8a2-d5a4-4e91-a4a5-876cb6ca4349 duration_ms=434.91 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=3794214c-6115-4958-baed-1151521c7d10 duration_ms=435.95 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=bda02d11-eb58-4d32-8860-aa23fd6bb2f8 duration_ms=447.8 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=f8bbdc98-233c-4baf-9be9-7c8df333c4b5 duration_ms=446.75 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=2f0592fc-9e7c-468e-b0b6-df2b2727aeef duration_ms=445.25 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=396f480f-4e35-4001-99f7-09c5ba606933 duration_ms=455.67 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=5f94cd5d-6e21-4d41-a031-ac06c6fe81eb duration_ms=462.29 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=f72cd9bf-b3d1-4eab-8020-0ab0407b2c11 duration_ms=468.44 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=1c3e40c2-de54-4061-896b-505574dd6f47 duration_ms=478.65 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=8d42a1d1-7679-4470-947f-3bc37500d733 duration_ms=480.82 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=287fa42c-b3e7-4e51-a0e4-ac5375547f73 duration_ms=498.54 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=f8f21a92-cbbd-43ed-9cbd-f8f13b971465 duration_ms=500.0 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=13261854-cf66-47c6-9a05-b7340dea2921 duration_ms=508.28 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=cdc9476a-cfe6-4102-8b55-ce540168e493 duration_ms=509.58 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=a4f6fd05-40d1-4090-92b9-99481ecf8830 duration_ms=511.72 method=POST path=/chat status=200
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=8b77a83f-e929-46b0-9a8f-762d8800abbd duration_ms=505.76 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=8b77a83f-e929-46b0-9a8f-762d8800abbd duration_ms=520.53 method=POST path=/chat status=200
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=d48767f6-7aac-4428-957e-8f65a0346c80 duration_ms=506.67 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=17602273-f63c-4135-a1fa-cc8864bf44de duration_ms=506.06 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=d48767f6-7aac-4428-957e-8f65a0346c80 duration_ms=521.68 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=17602273-f63c-4135-a1fa-cc8864bf44de duration_ms=520.09 method=POST path=/chat status=200
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=147a47b7-2b83-41d6-9bf3-e81b8bb256b7 duration_ms=524.21 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=147a47b7-2b83-41d6-9bf3-e81b8bb256b7 duration_ms=538.67 method=POST path=/chat status=200
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=6f7e3635-9a61-4172-bf6f-62a8c223ad5b duration_ms=525.8 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=2568c627-51d5-449a-b482-07007a9bdcfb duration_ms=524.52 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=6f7e3635-9a61-4172-bf6f-62a8c223ad5b duration_ms=540.95 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=2568c627-51d5-449a-b482-07007a9bdcfb duration_ms=537.95 method=POST path=/chat status=200
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=e6d6515d-12cf-49a6-b67f-1863d41834d0 duration_ms=527.55 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=e6d6515d-12cf-49a6-b67f-1863d41834d0 duration_ms=543.5 method=POST path=/chat status=200
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=ac077f9e-3216-4910-b6eb-c4c959a57509 duration_ms=540.33 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=ac077f9e-3216-4910-b6eb-c4c959a57509 duration_ms=555.06 method=POST path=/chat status=200
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=8bead3a9-80e7-4247-a70b-bc972aa53a6f duration_ms=540.94 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=8bead3a9-80e7-4247-a70b-bc972aa53a6f duration_ms=555.1 method=POST path=/chat status=200
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=80b48a5d-f305-4ece-bf58-cb64413203ba duration_ms=543.02 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=80b48a5d-f305-4ece-bf58-cb64413203ba duration_ms=557.87 method=POST path=/chat status=200
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=d57fec2c-9eb3-49a7-b7ee-ac1156775fc9 duration_ms=572.9 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=89e54e6c-883a-4a9b-82d2-dac77e2d1b47 duration_ms=575.56 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=d57fec2c-9eb3-49a7-b7ee-ac1156775fc9 duration_ms=586.85 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=89e54e6c-883a-4a9b-82d2-dac77e2d1b47 duration_ms=592.33 method=POST path=/chat status=200
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=06482451-5557-4512-9a48-a5bb10ebf02b duration_ms=576.68 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=af1e2f29-5db3-4b83-a49c-559b9aa3ba90 duration_ms=575.74 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=06482451-5557-4512-9a48-a5bb10ebf02b duration_ms=593.58 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=af1e2f29-5db3-4b83-a49c-559b9aa3ba90 duration_ms=591.24 method=POST path=/chat status=200
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=8d4e6748-919d-446d-88c7-869662aa7077 duration_ms=578.57 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=8d4e6748-919d-446d-88c7-869662aa7077 duration_ms=593.94 method=POST path=/chat status=200
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=0d0cf94c-0f68-4679-b1f9-db46ccb5ce34 duration_ms=586.7 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=0d0cf94c-0f68-4679-b1f9-db46ccb5ce34 duration_ms=602.83 method=POST path=/chat status=200
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=0feaab9b-babd-46d0-9352-4d006171c924 duration_ms=598.47 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=af838027-e2f3-4dd3-ac9d-68746bd365bc duration_ms=596.76 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=0feaab9b-babd-46d0-9352-4d006171c924 duration_ms=613.8 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=af838027-e2f3-4dd3-ac9d-68746bd365bc duration_ms=610.19 method=POST path=/chat status=200
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=154795e8-15ca-4b07-a46e-12b3fed62958 duration_ms=600.18 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=154795e8-15ca-4b07-a46e-12b3fed62958 duration_ms=616.0 method=POST path=/chat status=200
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=6aa341fb-1773-413a-9bf3-6635f2bd4c04 duration_ms=601.55 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=6aa341fb-1773-413a-9bf3-6635f2bd4c04 duration_ms=616.75 method=POST path=/chat status=200
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=0b3a88c5-0d46-488c-82fc-bfc9bf9b7d2c duration_ms=602.0 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=0b3a88c5-0d46-488c-82fc-bfc9bf9b7d2c duration_ms=617.11 method=POST path=/chat status=200
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=53168e93-7a11-4c1e-a0cf-54b596fb79f5 duration_ms=611.63 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=53168e93-7a11-4c1e-a0cf-54b596fb79f5 duration_ms=627.52 method=POST path=/chat status=200
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=9059740d-ef7d-4b09-8e8e-2cc0b2bdc484 duration_ms=613.24 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=9059740d-ef7d-4b09-8e8e-2cc0b2bdc484 duration_ms=628.92 method=POST path=/chat status=200
+2026-03-14 07:15:04 [warning  ] slow_operation                 correlation_id=af63fffd-5018-434a-be2b-d27717da81b3 duration_ms=623.21 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=af63fffd-5018-434a-be2b-d27717da81b3 duration_ms=639.09 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=7370978d-7ed6-4b27-b60f-13fb484c0c0e general_util=0.64 tier=free
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=270e234a-dbee-4a08-83b8-8da789d36938 general_util=0.64 tier=free
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=8d715be0-f5c7-4dce-a6eb-0973fd53092b general_util=0.66 tier=free
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=44879af0-e4c3-4405-973d-f2204111ddc2 general_util=0.66 tier=free
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=bf32c89f-b072-44e0-8e6a-d22ba45f3ded general_util=0.78 tier=free
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=725ca7d2-1977-454e-9cd2-a02d6851cb44 general_util=0.78 tier=free
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=8a527b58-9897-4257-b4a4-f8dd9b29256c general_util=0.8 tier=free
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=ef3363b9-2a2b-464d-8ff0-63dc3630134e general_util=0.8 tier=free
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=892a4c93-a9c7-4476-8a32-e5c076a487a6 general_util=0.82 tier=free
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=d12663e9-f4bf-4094-9c06-610d22d755a7 general_util=0.82 tier=free
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=3e819b9a-e0a1-43ea-abef-01e8d42a137c general_util=0.82 tier=free
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=3610c8e9-7571-4fe9-9eba-1be850a2c06c general_util=0.82 tier=free
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=9f53d117-8592-4c45-8168-a66616f3f641 general_util=0.82 tier=free
+2026-03-14 07:15:04 [info     ] general_pool_high              correlation_id=65e640db-f64e-4666-91bc-1cc3c6fadf05 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:04 [info     ] general_pool_high              correlation_id=2da931d1-76d9-4b38-80dc-b61fdfcd9297 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=9507a504-b7a6-45be-b1fc-f061a55c06a7 general_util=0.82 tier=free
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=d73bcf72-92c2-498b-9209-db6c2350008e general_util=0.82 tier=free
+2026-03-14 07:15:04 [info     ] general_pool_high              correlation_id=432fca8d-5fce-4824-a67f-62e3bbfac501 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:04 [info     ] general_pool_high              correlation_id=13ed8978-a56f-420a-aef1-e535ba90688d fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=6746e923-e99a-47eb-adcd-bc6863680913 general_util=0.82 tier=free
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=a355c9bf-e1e6-407d-90d9-997fbfcfe4f7 general_util=0.82 tier=free
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=236f98d6-8c70-4059-b972-89c221197065 general_util=0.82 tier=free
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=81fc34fa-c374-42fc-ad1c-81645cb688b2 general_util=0.82 tier=free
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=0348c455-ea16-4174-ada1-ff30515d0663 general_util=0.82 tier=free
+2026-03-14 07:15:04 [info     ] free_routed_overflow           correlation_id=6ab52236-b242-437b-9928-80936bfc8492 general_util=0.82 tier=free
+2026-03-14 07:15:04 [warning  ] free_shed                      correlation_id=2b2347ed-d4e2-4a0f-9ff5-b0d96cba47c8 overflow_util=0.8333333333333334 shed_prob=0.16666666666666663 tier=free
+2026-03-14 07:15:04 [warning  ] request_shed                   correlation_id=2b2347ed-d4e2-4a0f-9ff5-b0d96cba47c8 user_id=load_free_39
+2026-03-14 07:15:04 [warning  ] free_shed                      correlation_id=0b745a5f-f20e-4b4a-ae1b-4f9565755e7c overflow_util=0.9 shed_prob=0.4999999999999999 tier=free
+2026-03-14 07:15:04 [warning  ] request_shed                   correlation_id=0b745a5f-f20e-4b4a-ae1b-4f9565755e7c user_id=load_free_23
+2026-03-14 07:15:04 [info     ] general_pool_high              correlation_id=7deb6221-feb9-4f06-91cb-4bf1545d9d9c fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:04 [warning  ] free_shed                      correlation_id=09fa0acc-1dd9-4b8b-b399-604487fa1f79 overflow_util=0.9666666666666667 shed_prob=0.8333333333333331 tier=free
+2026-03-14 07:15:04 [warning  ] request_shed                   correlation_id=09fa0acc-1dd9-4b8b-b399-604487fa1f79 user_id=load_free_46
+2026-03-14 07:15:04 [warning  ] free_shed                      correlation_id=5c0d8c46-076f-445b-b45b-92446bb6c305 overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:04 [warning  ] request_shed                   correlation_id=5c0d8c46-076f-445b-b45b-92446bb6c305 user_id=load_free_26
+2026-03-14 07:15:04 [warning  ] free_shed                      correlation_id=6cdef61a-7809-40e0-9c42-7dd0b2178695 overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:04 [warning  ] request_shed                   correlation_id=6cdef61a-7809-40e0-9c42-7dd0b2178695 user_id=load_free_16
+2026-03-14 07:15:04 [warning  ] free_shed                      correlation_id=06cbc719-ae90-4135-b141-2f1a3f0dcab4 overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:04 [warning  ] request_shed                   correlation_id=06cbc719-ae90-4135-b141-2f1a3f0dcab4 user_id=load_free_22
+2026-03-14 07:15:04 [info     ] general_pool_high              correlation_id=797f005c-a994-4d42-bb75-655d18f0bac8 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:04 [warning  ] free_shed                      correlation_id=14f82c6c-77a7-4f0c-aebf-a7dd56f214d0 overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:04 [warning  ] request_shed                   correlation_id=14f82c6c-77a7-4f0c-aebf-a7dd56f214d0 user_id=load_free_10
+2026-03-14 07:15:04 [warning  ] free_shed                      correlation_id=8c93c25b-4d38-43bd-ba07-a81b35eeab12 overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:04 [warning  ] request_shed                   correlation_id=8c93c25b-4d38-43bd-ba07-a81b35eeab12 user_id=load_free_48
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=2b2347ed-d4e2-4a0f-9ff5-b0d96cba47c8 duration_ms=53.38 method=POST path=/chat status=503
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=0b745a5f-f20e-4b4a-ae1b-4f9565755e7c duration_ms=56.15 method=POST path=/chat status=503
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=09fa0acc-1dd9-4b8b-b399-604487fa1f79 duration_ms=52.6 method=POST path=/chat status=503
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=5c0d8c46-076f-445b-b45b-92446bb6c305 duration_ms=55.98 method=POST path=/chat status=503
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=6cdef61a-7809-40e0-9c42-7dd0b2178695 duration_ms=62.33 method=POST path=/chat status=503
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=06cbc719-ae90-4135-b141-2f1a3f0dcab4 duration_ms=60.63 method=POST path=/chat status=503
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=14f82c6c-77a7-4f0c-aebf-a7dd56f214d0 duration_ms=63.32 method=POST path=/chat status=503
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=8c93c25b-4d38-43bd-ba07-a81b35eeab12 duration_ms=56.74 method=POST path=/chat status=503
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=1c9bdb66-b116-4577-a001-5c602cdb4342 duration_ms=158.5 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=4679c10f-ae16-447e-9e30-0b3745c160d1 duration_ms=169.3 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=849a909d-4d34-4fe1-a285-f7ccce11344f duration_ms=181.87 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=8b6c3cd4-c63a-40ae-8262-6029bf6b4484 duration_ms=181.93 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=9ad2bb0e-30ff-4344-bc16-1ca3a81708b9 duration_ms=186.79 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=5f9c46fc-ef1b-45af-afd1-77ec6b78a7dc duration_ms=219.1 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=b76f3779-74eb-4fcb-91f0-12ac26de070e duration_ms=221.88 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=e346e278-2781-4b00-b496-eeac0ffbd0b7 duration_ms=219.61 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=4b09a296-a453-423c-a90a-72553d66cbf5 duration_ms=253.36 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=d8f88aad-87dc-4c63-ada0-327ad5e8d6b8 duration_ms=253.1 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=0f36e31d-b35a-472c-b42c-6d090932d409 duration_ms=259.9 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=fe76e000-0591-47a2-903c-aeba6db62ebf duration_ms=276.3 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=ca6bb3e4-f5f9-4f25-b07b-24dfe62c8eb9 duration_ms=284.02 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=705fe258-630c-41a0-b1c7-cf23bac7a9a3 duration_ms=309.64 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=eff04814-93d3-45c5-a9e4-720046d1ec56 duration_ms=317.32 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=b736aaa0-3fe1-4ced-931d-74e3f0b66274 duration_ms=316.14 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=9507a504-b7a6-45be-b1fc-f061a55c06a7 duration_ms=325.15 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=c9829f3e-c54a-4d9e-bad3-7ce8777ae53b duration_ms=325.43 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=95f24146-4758-4f4d-9bd9-a4ede710f6cc duration_ms=318.65 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=44879af0-e4c3-4405-973d-f2204111ddc2 duration_ms=330.59 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=db7252a6-95ba-43dc-8df1-cffa6a230ac3 duration_ms=326.62 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=6746e923-e99a-47eb-adcd-bc6863680913 duration_ms=337.38 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=fb358cba-30fb-4a9d-a3eb-8e461a80bd56 duration_ms=341.07 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=3b0afc04-978a-43ab-b7b7-e7dad2a57dc5 duration_ms=333.19 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=252aa882-b84f-4e0b-860e-73d7c5e0980b duration_ms=347.29 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=d12663e9-f4bf-4094-9c06-610d22d755a7 duration_ms=342.53 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=777adb10-a299-434a-a0bb-966bdf9c8426 duration_ms=353.45 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=eed76998-eeea-47e4-be2a-fb6b91129811 duration_ms=351.43 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=2da931d1-76d9-4b38-80dc-b61fdfcd9297 duration_ms=351.02 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=c3cb602c-649b-443d-855f-ce3a8c52a9e1 duration_ms=363.27 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=7deb6221-feb9-4f06-91cb-4bf1545d9d9c duration_ms=360.07 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=13ed8978-a56f-420a-aef1-e535ba90688d duration_ms=360.54 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=236f98d6-8c70-4059-b972-89c221197065 duration_ms=369.61 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=432fca8d-5fce-4824-a67f-62e3bbfac501 duration_ms=362.01 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=7370978d-7ed6-4b27-b60f-13fb484c0c0e duration_ms=366.21 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=65e640db-f64e-4666-91bc-1cc3c6fadf05 duration_ms=368.41 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=d828092e-4d83-4eab-992a-568fee594902 duration_ms=369.35 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=b292b513-5646-4b93-b2d6-a8eaee13c213 duration_ms=372.32 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=949a78b6-5951-4e4a-a035-df997938202f duration_ms=382.63 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=625fd594-bbd3-4bf4-99a9-4fb29b13330f duration_ms=384.27 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=d73bcf72-92c2-498b-9209-db6c2350008e duration_ms=382.02 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=ae6cdb46-f757-40d9-803f-03df63509ece duration_ms=379.43 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=6ab52236-b242-437b-9928-80936bfc8492 duration_ms=387.92 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=012254f9-ace3-43d4-bec5-6073013beab8 duration_ms=385.61 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=fbbacb18-9a5e-42ca-9793-6c192a45dfc1 duration_ms=391.35 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=8a527b58-9897-4257-b4a4-f8dd9b29256c duration_ms=402.91 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=3e819b9a-e0a1-43ea-abef-01e8d42a137c duration_ms=397.86 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=bf32c89f-b072-44e0-8e6a-d22ba45f3ded duration_ms=398.94 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=16eb1bf7-0eef-4928-b299-b17fe83106f2 duration_ms=395.75 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=e9b1b506-ae0f-4eb1-921d-ab53f775a1cb duration_ms=394.54 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=d0382bed-7be7-453c-95ba-fb9f2c21d1ce duration_ms=415.55 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=68cee260-5c0a-4762-ae9d-ac015a0f710e duration_ms=423.12 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=81fc34fa-c374-42fc-ad1c-81645cb688b2 duration_ms=436.95 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=270e234a-dbee-4a08-83b8-8da789d36938 duration_ms=446.5 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=cdb8d28b-8686-4233-a139-d1f064795a50 duration_ms=436.56 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=648ae066-148f-4345-81c2-832fd93557dd duration_ms=454.35 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=9f53d117-8592-4c45-8168-a66616f3f641 duration_ms=458.11 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=d5741fbe-9b7b-4380-acbe-3821b44138e3 duration_ms=462.12 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=892a4c93-a9c7-4476-8a32-e5c076a487a6 duration_ms=466.07 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=24978c51-fa0a-4b12-94b9-b6bbb9beae2e duration_ms=485.11 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=98db605f-af3e-4689-813a-76f897d85d35 duration_ms=481.14 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=eaf35b54-f5d9-4ffa-8ff3-a71a918e36f2 duration_ms=482.49 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=5964c17f-9f33-499a-97e0-b72c3adbfcca duration_ms=484.78 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=61a5854f-efb1-40c5-9074-688160a9e650 duration_ms=500.42 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=725ca7d2-1977-454e-9cd2-a02d6851cb44 duration_ms=500.59 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=9e041ad6-24a0-472f-aec9-97a65fd823fa duration_ms=501.09 method=POST path=/chat status=200
+2026-03-14 07:15:04 [info     ] request_completed              correlation_id=7fffe35a-77ce-4d67-b8bd-7d6f04103111 duration_ms=503.55 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=3610c8e9-7571-4fe9-9eba-1be850a2c06c duration_ms=512.69 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=3610c8e9-7571-4fe9-9eba-1be850a2c06c duration_ms=535.8 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=6decba8a-15d5-4084-882b-a495e05af6a7 duration_ms=514.08 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=6decba8a-15d5-4084-882b-a495e05af6a7 duration_ms=531.35 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=4ed86557-b705-4f2f-8211-44e7eb279983 duration_ms=514.81 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=4ed86557-b705-4f2f-8211-44e7eb279983 duration_ms=532.11 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=29b4891a-7e85-42e0-b3d9-2733bcc4e4d7 duration_ms=523.42 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=29b4891a-7e85-42e0-b3d9-2733bcc4e4d7 duration_ms=542.33 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=319e5081-6aa4-412f-b753-e1f61a37384a duration_ms=526.04 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=319e5081-6aa4-412f-b753-e1f61a37384a duration_ms=548.64 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=ae61b8d8-8d36-4005-8111-59dfae006b95 duration_ms=525.24 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=ae61b8d8-8d36-4005-8111-59dfae006b95 duration_ms=542.56 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=c62e990f-2414-4246-93f8-acf9af07d8e1 duration_ms=528.13 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=c62e990f-2414-4246-93f8-acf9af07d8e1 duration_ms=543.97 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=feff1e9f-8be8-4e58-8806-4ddd35f89287 duration_ms=539.26 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=feff1e9f-8be8-4e58-8806-4ddd35f89287 duration_ms=559.01 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=a355c9bf-e1e6-407d-90d9-997fbfcfe4f7 duration_ms=566.89 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=a355c9bf-e1e6-407d-90d9-997fbfcfe4f7 duration_ms=589.18 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=0348c455-ea16-4174-ada1-ff30515d0663 duration_ms=571.3 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=0348c455-ea16-4174-ada1-ff30515d0663 duration_ms=591.49 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=ab8cd1d9-04c0-4f17-ac3e-2abafa643b43 duration_ms=573.5 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=ab8cd1d9-04c0-4f17-ac3e-2abafa643b43 duration_ms=595.21 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=8d715be0-f5c7-4dce-a6eb-0973fd53092b duration_ms=598.8 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=8d715be0-f5c7-4dce-a6eb-0973fd53092b duration_ms=621.4 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=547e2dde-6a4e-41af-8fdb-484072418e40 duration_ms=596.89 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=547e2dde-6a4e-41af-8fdb-484072418e40 duration_ms=614.71 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=ef3363b9-2a2b-464d-8ff0-63dc3630134e duration_ms=597.77 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=ef3363b9-2a2b-464d-8ff0-63dc3630134e duration_ms=617.04 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=797f005c-a994-4d42-bb75-655d18f0bac8 duration_ms=612.99 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=797f005c-a994-4d42-bb75-655d18f0bac8 duration_ms=627.39 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=ca44106a-2148-444b-aac6-4331e3ae83cb general_util=0.62 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=45db2683-6e5b-4f35-9cda-e337c0e1c718 general_util=0.62 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=9c1f4b33-7c23-49cd-962a-645f3f11a960 general_util=0.68 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=352b0cfe-64b8-4e78-ac0d-5f3abf09959d general_util=0.68 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=3560b03f-bc0e-4219-886c-f83c20256338 general_util=0.68 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=3fa805a8-498d-45eb-b45c-6b7b8695de8f general_util=0.68 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=bef1e987-efe7-47e5-bc76-8e3a37b38ccb general_util=0.68 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=06f5bcaa-32a1-4d9b-8a4c-bc2fb2a3cd74 general_util=0.68 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=150ef027-7580-4a38-9d77-e519bba20926 general_util=0.7 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=87449332-a02c-4e8d-8543-65d09683ef0f general_util=0.76 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=0153711b-3088-4ac4-a081-7b48ecc4cdc8 general_util=0.76 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=d9d80929-527b-4202-bb07-29ce51d4413c general_util=0.76 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=05b53241-c1f4-46b8-92a6-08cf21e3e205 general_util=0.8 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=0a943cc6-3a05-4fe3-89f0-606a7d82fd62 general_util=0.8 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=eacd12cb-9cd8-4ae2-a262-b9f39b58b288 general_util=0.8 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=1b9097ba-60d7-40e7-9e83-eb1aca674e70 general_util=0.82 tier=free
+2026-03-14 07:15:05 [info     ] general_pool_high              correlation_id=7d6220ec-9c2e-47e7-9085-13fa8b730127 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=f1068654-45ca-4607-819a-ce025f536230 general_util=0.82 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=2262c45e-000a-429f-bcea-6d20d344c23d general_util=0.82 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=f975baad-13f6-447d-bd11-5c4ea1582793 general_util=0.82 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=d0224cd1-177c-4dd1-8dba-5b9ed5b74d91 general_util=0.82 tier=free
+2026-03-14 07:15:05 [info     ] general_pool_high              correlation_id=c6a6c23d-ede6-4b34-9bb8-7b57465f2d02 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:05 [info     ] general_pool_high              correlation_id=5de7fd82-4b14-4656-9792-dc6773e236a4 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:05 [info     ] general_pool_high              correlation_id=ce873f0a-eaba-4d9c-9292-2d9817812241 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:05 [info     ] general_pool_high              correlation_id=56f1f324-aac6-491c-8032-5361a5721739 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:05 [info     ] general_pool_high              correlation_id=26f27505-3c85-4bf6-89e1-e32554073494 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:05 [warning  ] free_shed                      correlation_id=661f2507-c94e-4a94-83af-d48acc4a5a91 overflow_util=0.9 shed_prob=0.4999999999999999 tier=free
+2026-03-14 07:15:05 [warning  ] request_shed                   correlation_id=661f2507-c94e-4a94-83af-d48acc4a5a91 user_id=load_free_8
+2026-03-14 07:15:05 [info     ] general_pool_high              correlation_id=9d12c1e8-66df-4373-9f3f-41e63b495474 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:05 [info     ] general_pool_high              correlation_id=5c4c7107-50e3-4fe5-b47a-492527c51bc3 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:05 [warning  ] free_shed                      correlation_id=d2f1e1ed-c05f-4a35-914b-b729cb87d472 overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:05 [warning  ] request_shed                   correlation_id=d2f1e1ed-c05f-4a35-914b-b729cb87d472 user_id=load_free_53
+2026-03-14 07:15:05 [info     ] general_pool_high              correlation_id=490ed22b-9641-4426-b6a7-2f1efd9d1468 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:05 [warning  ] free_shed                      correlation_id=97c0bc9e-a29a-48dd-8f59-e886081a85cb overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:05 [warning  ] request_shed                   correlation_id=97c0bc9e-a29a-48dd-8f59-e886081a85cb user_id=load_free_27
+2026-03-14 07:15:05 [warning  ] free_shed                      correlation_id=c69cb50a-2c5e-4fed-8182-d80ccb654f58 overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:05 [warning  ] request_shed                   correlation_id=c69cb50a-2c5e-4fed-8182-d80ccb654f58 user_id=load_free_35
+2026-03-14 07:15:05 [warning  ] free_shed                      correlation_id=21797fc6-3f7b-4389-8b2c-d4caa859a2d3 overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:05 [warning  ] request_shed                   correlation_id=21797fc6-3f7b-4389-8b2c-d4caa859a2d3 user_id=load_free_46
+2026-03-14 07:15:05 [warning  ] free_shed                      correlation_id=3c07ebf6-3928-4df9-b40d-85fcaaca9b4c overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:05 [warning  ] request_shed                   correlation_id=3c07ebf6-3928-4df9-b40d-85fcaaca9b4c user_id=load_free_41
+2026-03-14 07:15:05 [warning  ] free_shed                      correlation_id=f1bb535b-784c-4680-9b5c-97132a9d1135 overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:05 [warning  ] request_shed                   correlation_id=f1bb535b-784c-4680-9b5c-97132a9d1135 user_id=load_free_17
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=661f2507-c94e-4a94-83af-d48acc4a5a91 duration_ms=58.9 method=POST path=/chat status=503
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=d2f1e1ed-c05f-4a35-914b-b729cb87d472 duration_ms=51.14 method=POST path=/chat status=503
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=97c0bc9e-a29a-48dd-8f59-e886081a85cb duration_ms=55.21 method=POST path=/chat status=503
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=c69cb50a-2c5e-4fed-8182-d80ccb654f58 duration_ms=54.29 method=POST path=/chat status=503
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=21797fc6-3f7b-4389-8b2c-d4caa859a2d3 duration_ms=58.16 method=POST path=/chat status=503
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=3c07ebf6-3928-4df9-b40d-85fcaaca9b4c duration_ms=61.36 method=POST path=/chat status=503
+2026-03-14 07:15:05 [warning  ] free_shed                      correlation_id=e707065b-f7ee-44ad-bdd3-d590dd55c20e overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:05 [warning  ] request_shed                   correlation_id=e707065b-f7ee-44ad-bdd3-d590dd55c20e user_id=load_free_44
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=f1bb535b-784c-4680-9b5c-97132a9d1135 duration_ms=66.05 method=POST path=/chat status=503
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=e707065b-f7ee-44ad-bdd3-d590dd55c20e duration_ms=64.16 method=POST path=/chat status=503
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=5a29b523-d117-4db6-b59a-05f775b4d86d duration_ms=174.57 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=ade35907-f970-4e30-9202-874e0902bcde duration_ms=182.53 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=6ac49ff6-6a5f-4b62-874f-f4e74e78332f duration_ms=183.91 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=fec5f6c6-a432-4dee-971a-174021a3129b duration_ms=193.83 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=f0f9b838-5880-48ff-8209-d391aeb8db70 duration_ms=207.64 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=7472fdc1-0e71-4faf-b0d1-8d0db8c4b67e duration_ms=218.91 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=77bf51e4-ab7f-4043-a486-8163e1eace46 duration_ms=220.41 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=5497d8cf-bdf0-487f-8bad-959d8691eecd duration_ms=251.51 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=8efd9fc7-6626-4790-ba11-35cd79721471 duration_ms=250.95 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=29465a77-8ef8-4570-9abf-7aa4d5c26774 duration_ms=252.03 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=9e8b81b6-adc2-413b-ba7d-9465da86f051 duration_ms=253.54 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=c6f684dd-cc1a-4d75-b984-d43904535553 duration_ms=263.14 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=26f27505-3c85-4bf6-89e1-e32554073494 duration_ms=261.13 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=56f1f324-aac6-491c-8032-5361a5721739 duration_ms=263.1 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=7e7178a1-724f-4d9d-a7f3-e919e4ce48c2 duration_ms=306.05 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=92c7a32c-1c35-4143-9282-aca33aeeb313 duration_ms=312.5 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=e2d8be14-b3a7-4046-a43f-27f93d6d823c duration_ms=306.75 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=45db2683-6e5b-4f35-9cda-e337c0e1c718 duration_ms=317.19 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=6bd1894a-d46d-4dec-8f7e-5f33a836ff44 duration_ms=316.53 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=0a943cc6-3a05-4fe3-89f0-606a7d82fd62 duration_ms=322.02 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=c6a6c23d-ede6-4b34-9bb8-7b57465f2d02 duration_ms=325.49 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=150ef027-7580-4a38-9d77-e519bba20926 duration_ms=340.09 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=2262c45e-000a-429f-bcea-6d20d344c23d duration_ms=334.23 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=8ee5fe0b-a504-49ec-842e-6ed770936ae6 duration_ms=340.21 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=f975baad-13f6-447d-bd11-5c4ea1582793 duration_ms=348.83 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=5de7fd82-4b14-4656-9792-dc6773e236a4 duration_ms=338.86 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=9bf8a171-fda3-4fd7-ae61-ee29c39cc85d duration_ms=354.46 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=f7ae72e5-57d7-4ba9-846e-46cac2e185cd duration_ms=357.42 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=0eae4802-7236-4717-8a8b-2c9c368a299f duration_ms=365.11 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=8f77a94f-863e-43bf-b78b-6840e4405281 duration_ms=369.61 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=5c4c7107-50e3-4fe5-b47a-492527c51bc3 duration_ms=368.66 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=d0224cd1-177c-4dd1-8dba-5b9ed5b74d91 duration_ms=386.72 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=53442f26-f4ba-4775-94ab-4ff003c18a6b duration_ms=379.91 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=93a26422-9944-47da-92fc-adbd3448c6b2 duration_ms=383.31 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=7d6220ec-9c2e-47e7-9085-13fa8b730127 duration_ms=384.77 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=9d12c1e8-66df-4373-9f3f-41e63b495474 duration_ms=393.55 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=5da0c27f-571d-4258-9458-d9cbbe3339d1 duration_ms=397.13 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=5e7becd8-2934-4431-a449-c2da0b61409a duration_ms=392.65 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=0d69176b-7da8-460c-9071-f2d930312828 duration_ms=401.96 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=ce873f0a-eaba-4d9c-9292-2d9817812241 duration_ms=396.25 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=8fc0ee40-81f7-445b-8895-cec35c25015c duration_ms=407.55 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=e90bfd37-444a-421d-a98f-51ee4797d6eb duration_ms=417.53 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=1af7ad2b-8a45-45cc-b3ec-e2bcb114033b duration_ms=433.52 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=04c8c2ae-17e8-4702-92d7-74d051cb1cfa duration_ms=429.08 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=a4d31a46-f046-47b6-9b72-bfd5aeed33f2 duration_ms=428.29 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=d9d80929-527b-4202-bb07-29ce51d4413c duration_ms=432.97 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=ee995984-ef1e-44bc-aec4-041b20193689 duration_ms=446.84 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=ca44106a-2148-444b-aac6-4331e3ae83cb duration_ms=459.0 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=995c9538-01c7-4768-b992-0cb2910ff6f2 duration_ms=461.47 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=df871ead-6868-4b8f-a43c-f290ae05ea2d duration_ms=463.73 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=1901fdf8-8dcf-48f3-ba29-0761e4f3abe3 duration_ms=470.6 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=c16a520b-ff56-4641-b0f5-1fcbcd4ad7f0 duration_ms=470.67 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=a969f261-945d-46af-a7aa-305e58ed2a85 duration_ms=473.99 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=06f5bcaa-32a1-4d9b-8a4c-bc2fb2a3cd74 duration_ms=472.55 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=1a06b7f6-e332-4236-95f5-3c49a4c20294 duration_ms=490.0 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=5559020d-8326-47b1-ad2e-4261aed59d06 duration_ms=500.79 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=94a01c1f-0abd-48d9-99a7-4e740c13dfcf duration_ms=505.05 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=760ae36c-9a50-4ec3-8c15-ddc30c9dd732 duration_ms=507.33 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=6ac549d4-fa03-42a9-a887-2ec7043ffbb5 duration_ms=514.25 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=a079c913-7086-4354-a43b-1a561781f4b6 duration_ms=517.08 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=9e9f80aa-1598-4636-8aa3-f88ac3256c2e duration_ms=512.74 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=9e9f80aa-1598-4636-8aa3-f88ac3256c2e duration_ms=534.85 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=1b9097ba-60d7-40e7-9e83-eb1aca674e70 duration_ms=514.85 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=1b9097ba-60d7-40e7-9e83-eb1aca674e70 duration_ms=539.61 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=87605012-b41d-4b1a-a123-f08a1e618118 duration_ms=515.38 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=87605012-b41d-4b1a-a123-f08a1e618118 duration_ms=538.35 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=f1068654-45ca-4607-819a-ce025f536230 duration_ms=523.84 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=f1068654-45ca-4607-819a-ce025f536230 duration_ms=546.77 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=bef1e987-efe7-47e5-bc76-8e3a37b38ccb duration_ms=522.84 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=bef1e987-efe7-47e5-bc76-8e3a37b38ccb duration_ms=543.34 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=0153711b-3088-4ac4-a081-7b48ecc4cdc8 duration_ms=525.06 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=0153711b-3088-4ac4-a081-7b48ecc4cdc8 duration_ms=547.71 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=bbddb15a-b186-460e-8126-964ae7e071db duration_ms=524.42 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=bbddb15a-b186-460e-8126-964ae7e071db duration_ms=544.23 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=05b53241-c1f4-46b8-92a6-08cf21e3e205 duration_ms=534.33 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=05b53241-c1f4-46b8-92a6-08cf21e3e205 duration_ms=559.26 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=a49e77b3-e393-4eb4-9662-8f7be03124d6 duration_ms=532.72 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=a49e77b3-e393-4eb4-9662-8f7be03124d6 duration_ms=553.33 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=16d0f61b-378b-45c4-b684-a865e20dc6a0 duration_ms=537.3 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=16d0f61b-378b-45c4-b684-a865e20dc6a0 duration_ms=562.83 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=3560b03f-bc0e-4219-886c-f83c20256338 duration_ms=537.1 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=3560b03f-bc0e-4219-886c-f83c20256338 duration_ms=560.44 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=eacd12cb-9cd8-4ae2-a262-b9f39b58b288 duration_ms=544.43 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=eacd12cb-9cd8-4ae2-a262-b9f39b58b288 duration_ms=564.89 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=0759ea28-55ab-44ab-84d5-e9c6cc715498 duration_ms=545.86 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=0759ea28-55ab-44ab-84d5-e9c6cc715498 duration_ms=566.64 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=87449332-a02c-4e8d-8543-65d09683ef0f duration_ms=546.8 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=87449332-a02c-4e8d-8543-65d09683ef0f duration_ms=567.67 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=3fa805a8-498d-45eb-b45c-6b7b8695de8f duration_ms=550.18 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=3fa805a8-498d-45eb-b45c-6b7b8695de8f duration_ms=576.07 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=9c1f4b33-7c23-49cd-962a-645f3f11a960 duration_ms=547.65 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=9c1f4b33-7c23-49cd-962a-645f3f11a960 duration_ms=567.62 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=3e38fb64-5a88-4bf0-8d21-164182b3f630 duration_ms=550.36 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=3e38fb64-5a88-4bf0-8d21-164182b3f630 duration_ms=573.44 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=791a403d-6755-47ac-baf8-b91d2ba3e01d duration_ms=552.4 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=791a403d-6755-47ac-baf8-b91d2ba3e01d duration_ms=578.38 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=352b0cfe-64b8-4e78-ac0d-5f3abf09959d duration_ms=559.13 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=352b0cfe-64b8-4e78-ac0d-5f3abf09959d duration_ms=584.47 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=1c386ee6-1042-4501-b6d3-95705abfbfc4 duration_ms=566.37 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=1c386ee6-1042-4501-b6d3-95705abfbfc4 duration_ms=589.09 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=8759b159-53a1-4f81-9108-833514ffe22e duration_ms=573.82 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=8759b159-53a1-4f81-9108-833514ffe22e duration_ms=595.46 method=POST path=/chat status=200
+2026-03-14 07:15:05 [warning  ] slow_operation                 correlation_id=490ed22b-9641-4426-b6a7-2f1efd9d1468 duration_ms=587.89 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=490ed22b-9641-4426-b6a7-2f1efd9d1468 duration_ms=606.64 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=973ebaf4-aeec-46d6-a673-cbd49c61fcc6 general_util=0.64 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=6c2e8359-1754-48a6-b90e-bcf73aee3f03 general_util=0.66 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=953df9fa-5c78-4d8b-9692-01876ba24f6a general_util=0.66 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=3c02f2fc-401b-48b1-92d3-1d46a69a66c9 general_util=0.66 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=331e562e-593b-46a3-ac0f-e642d9fd81cf general_util=0.66 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=e3eed39e-0e7c-4762-b583-c829346260a4 general_util=0.66 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=39ce95a9-7100-4390-b4ed-767a93cfc1a4 general_util=0.66 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=4cb777ee-969d-443d-981c-7f08ce8411a7 general_util=0.66 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=5ca71b2b-1df4-42b7-aba2-a4edfaa210a2 general_util=0.66 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=46052928-31a4-4faf-85b4-1b63903fac8d general_util=0.66 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=5bcb6057-4b3e-4150-95aa-dc4618bc5204 general_util=0.66 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=0a0b25fe-34db-4018-979c-36fc07ef7678 general_util=0.66 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=a5997c6e-4d82-4412-84c7-d6c7a707bdcd general_util=0.66 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=c98ed0e7-3b1d-4ac4-8975-4954455ec95e general_util=0.7 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=cf6cdced-3c96-4c98-a4f4-7cd48b5701cb general_util=0.7 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=765d286e-262f-43d7-8a67-668d1cc9d06d general_util=0.7 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=140cfcd8-b1a2-4d2b-955b-3d2b2f44d12b general_util=0.72 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=f1b2d44e-77a1-4faa-b8f5-e9e026b3e27a general_util=0.72 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=95625c42-1cad-4e03-8404-d728cfa00de4 general_util=0.72 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=bcb356bf-e97b-403a-9b36-7bbddfa42c45 general_util=0.78 tier=free
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=79118800-df14-4ac9-b63e-3e13ab87311e general_util=0.82 tier=free
+2026-03-14 07:15:05 [info     ] general_pool_high              correlation_id=fdb44990-69fa-44e3-9ad2-5dc280ba77dc fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:05 [info     ] general_pool_high              correlation_id=bbc9f32c-fc03-4ba0-bdbe-66797af08bdb fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:05 [info     ] general_pool_high              correlation_id=92d20002-e492-44f2-9099-fb3218414bcd fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:05 [info     ] free_routed_overflow           correlation_id=ffe0af9a-2b9b-49a6-b2e4-a608cea39239 general_util=0.82 tier=free
+2026-03-14 07:15:05 [info     ] general_pool_high              correlation_id=98bbab07-d8f2-443c-856c-8bbf56e62caf fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:05 [info     ] general_pool_high              correlation_id=0ee1787d-8b8b-49fa-a40d-78ec617f29f5 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:05 [warning  ] free_shed                      correlation_id=e14bed83-a628-4334-aaf7-eb8b7a3bf1f3 overflow_util=0.9 shed_prob=0.4999999999999999 tier=free
+2026-03-14 07:15:05 [warning  ] request_shed                   correlation_id=e14bed83-a628-4334-aaf7-eb8b7a3bf1f3 user_id=load_free_48
+2026-03-14 07:15:05 [warning  ] free_shed                      correlation_id=33f6ac99-6c35-4b46-87e5-ba321c594e14 overflow_util=0.9 shed_prob=0.4999999999999999 tier=free
+2026-03-14 07:15:05 [warning  ] request_shed                   correlation_id=33f6ac99-6c35-4b46-87e5-ba321c594e14 user_id=load_free_31
+2026-03-14 07:15:05 [warning  ] free_shed                      correlation_id=27c1f27a-cd13-4640-889e-e8f622bdfd98 overflow_util=0.9 shed_prob=0.4999999999999999 tier=free
+2026-03-14 07:15:05 [warning  ] request_shed                   correlation_id=27c1f27a-cd13-4640-889e-e8f622bdfd98 user_id=load_free_46
+2026-03-14 07:15:05 [warning  ] free_shed                      correlation_id=0b831e38-be3c-4f7b-8ded-01a819c3de5c overflow_util=0.9 shed_prob=0.4999999999999999 tier=free
+2026-03-14 07:15:05 [warning  ] request_shed                   correlation_id=0b831e38-be3c-4f7b-8ded-01a819c3de5c user_id=load_free_21
+2026-03-14 07:15:05 [info     ] general_pool_high              correlation_id=57d68b65-030e-4a5a-8b32-3ae371194cab fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:05 [warning  ] free_shed                      correlation_id=5aaa8675-24c7-4ef5-a9e0-49a56060cc93 overflow_util=0.9333333333333333 shed_prob=0.6666666666666665 tier=free
+2026-03-14 07:15:05 [warning  ] request_shed                   correlation_id=5aaa8675-24c7-4ef5-a9e0-49a56060cc93 user_id=load_free_30
+2026-03-14 07:15:05 [warning  ] free_shed                      correlation_id=c7bd1f05-731a-413a-9d98-de561d8fcb38 overflow_util=0.9666666666666667 shed_prob=0.8333333333333331 tier=free
+2026-03-14 07:15:05 [warning  ] request_shed                   correlation_id=c7bd1f05-731a-413a-9d98-de561d8fcb38 user_id=load_free_10
+2026-03-14 07:15:05 [info     ] general_pool_high              correlation_id=ca30469c-6798-417b-8496-775243fabedb fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:05 [warning  ] free_shed                      correlation_id=c1e75d55-46fa-430e-a0b6-1410e360d2b7 overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:05 [warning  ] request_shed                   correlation_id=c1e75d55-46fa-430e-a0b6-1410e360d2b7 user_id=load_free_34
+2026-03-14 07:15:05 [warning  ] free_shed                      correlation_id=ed9836c5-4826-43f9-9bcc-887c7764eac0 overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:05 [warning  ] request_shed                   correlation_id=ed9836c5-4826-43f9-9bcc-887c7764eac0 user_id=load_free_29
+2026-03-14 07:15:05 [warning  ] free_shed                      correlation_id=5f55c75b-b9ee-4412-afee-e62298fe20f3 overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:05 [warning  ] request_shed                   correlation_id=5f55c75b-b9ee-4412-afee-e62298fe20f3 user_id=load_free_8
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=e14bed83-a628-4334-aaf7-eb8b7a3bf1f3 duration_ms=54.61 method=POST path=/chat status=503
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=33f6ac99-6c35-4b46-87e5-ba321c594e14 duration_ms=57.2 method=POST path=/chat status=503
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=27c1f27a-cd13-4640-889e-e8f622bdfd98 duration_ms=55.02 method=POST path=/chat status=503
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=0b831e38-be3c-4f7b-8ded-01a819c3de5c duration_ms=58.98 method=POST path=/chat status=503
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=5aaa8675-24c7-4ef5-a9e0-49a56060cc93 duration_ms=57.61 method=POST path=/chat status=503
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=c7bd1f05-731a-413a-9d98-de561d8fcb38 duration_ms=61.73 method=POST path=/chat status=503
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=c1e75d55-46fa-430e-a0b6-1410e360d2b7 duration_ms=57.17 method=POST path=/chat status=503
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=ed9836c5-4826-43f9-9bcc-887c7764eac0 duration_ms=57.89 method=POST path=/chat status=503
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=5f55c75b-b9ee-4412-afee-e62298fe20f3 duration_ms=78.48 method=POST path=/chat status=503
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=e802d22b-c4c3-43b6-8a64-6789c5d4ca56 duration_ms=166.6 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=223ebb28-b0f3-4a5a-8ece-d2145415b34c duration_ms=186.79 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=f189dada-5b05-49bf-abef-7a761dfd7c92 duration_ms=207.92 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=07d229a2-c7b0-4dcc-9efa-f44fcb370136 duration_ms=208.25 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=e95e8aed-435e-4ff7-a57c-08ca05c4557e duration_ms=215.93 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=cf19e13c-bac1-4dba-a352-fb97d466e3ad duration_ms=229.32 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=a3d9c9de-20b2-40f8-bda5-c99dfcc15626 duration_ms=227.95 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=f1f42203-ae6e-47be-90a3-5386c6643afb duration_ms=232.19 method=POST path=/chat status=200
+2026-03-14 07:15:05 [info     ] request_completed              correlation_id=ca30469c-6798-417b-8496-775243fabedb duration_ms=231.87 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=fa330655-22a9-48a2-9d7b-841959336df3 duration_ms=249.18 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=09a340c5-795e-4515-88ab-dfcb038f8612 duration_ms=248.4 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=ae9592ee-76c4-4ebe-8ee2-a3388b65edbc duration_ms=249.5 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=d261f440-35d8-429d-ab98-80cd2d9082f4 duration_ms=249.74 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=31059665-7572-43d7-9447-7c326d63d547 duration_ms=252.34 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=1b260a17-2b45-4189-9bd5-9bfe5d758115 duration_ms=252.66 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=91bf75b0-a3e1-4c28-aff0-ec1191bdc9ea duration_ms=257.41 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=3a05f8ed-54d3-4e7b-8356-736874d72a3a duration_ms=270.19 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=fdb44990-69fa-44e3-9ad2-5dc280ba77dc duration_ms=270.39 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=bbc9f32c-fc03-4ba0-bdbe-66797af08bdb duration_ms=289.58 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=57d68b65-030e-4a5a-8b32-3ae371194cab duration_ms=289.07 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=92d20002-e492-44f2-9099-fb3218414bcd duration_ms=294.15 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=46052928-31a4-4faf-85b4-1b63903fac8d duration_ms=315.54 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=deb2670f-4d79-4e25-81a5-531cc80b9551 duration_ms=315.47 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=4b90b410-e42c-40d7-a361-e7b0104c5fc3 duration_ms=327.51 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=140cfcd8-b1a2-4d2b-955b-3d2b2f44d12b duration_ms=321.26 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=44a57f72-cbdf-4d42-a3ac-107efb75275f duration_ms=319.27 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=9810a0e0-6d51-4436-85b9-7138fa69f7cf duration_ms=321.23 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=e3eed39e-0e7c-4762-b583-c829346260a4 duration_ms=328.76 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=0c6fe3e3-8cff-4578-940b-9f3abfe427b4 duration_ms=335.12 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=2ff3488b-2537-44fb-bc2c-64d3aec6b2fd duration_ms=330.68 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=59489970-9171-48da-b092-1fb6b365bcaa duration_ms=330.7 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=98bbab07-d8f2-443c-856c-8bbf56e62caf duration_ms=331.9 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=a5997c6e-4d82-4412-84c7-d6c7a707bdcd duration_ms=343.27 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=0df1be60-b1c9-482a-a2cc-b810ac75a2ec duration_ms=332.46 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=4cb777ee-969d-443d-981c-7f08ce8411a7 duration_ms=341.13 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=30608d22-0343-4ae5-b295-2272b2869d57 duration_ms=344.73 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=ebd759b4-0feb-4dd3-a23b-567322f89c6d duration_ms=343.96 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=1768c3c5-5f63-457b-b8f0-692e9af974e8 duration_ms=350.33 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=39ce95a9-7100-4390-b4ed-767a93cfc1a4 duration_ms=353.76 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=93e68c52-a93c-41e6-bf98-c4f3fbbcd3fc duration_ms=364.1 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=6c2e8359-1754-48a6-b90e-bcf73aee3f03 duration_ms=375.36 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=973ebaf4-aeec-46d6-a673-cbd49c61fcc6 duration_ms=385.15 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=0ee1787d-8b8b-49fa-a40d-78ec617f29f5 duration_ms=390.06 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=f14a176e-80bb-4ca4-b887-7b0617ded095 duration_ms=396.28 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=3da0749e-9385-4d46-a637-dc7e872b8149 duration_ms=399.92 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=28f0b091-13ec-45c0-9ef0-fc80cf927fc4 duration_ms=403.0 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=0a0b25fe-34db-4018-979c-36fc07ef7678 duration_ms=406.06 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=51b8d5ed-fd9f-4ccf-bfa0-b3c78bea8608 duration_ms=408.59 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=23a7bc35-91a5-4a33-803a-ab0d65782d42 duration_ms=434.5 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=850d170c-3c0c-4102-95df-a9745196d857 duration_ms=430.41 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=bcb356bf-e97b-403a-9b36-7bbddfa42c45 duration_ms=458.24 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=fe452e25-faeb-4fb2-8fe2-239805e8444f duration_ms=462.65 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=07251f04-0b71-434a-a1dc-ee8ee936d2aa duration_ms=455.2 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=331e562e-593b-46a3-ac0f-e642d9fd81cf duration_ms=454.6 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=5bcb6057-4b3e-4150-95aa-dc4618bc5204 duration_ms=455.78 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=258a8278-deb5-4035-8abd-25d8ef26a188 duration_ms=482.42 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=36ca0f5f-eca0-43f2-9cc8-7b84f26a5494 duration_ms=489.84 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=f27830a2-02d3-4b57-9393-33d5db48386f duration_ms=513.55 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=c98ed0e7-3b1d-4ac4-8975-4954455ec95e duration_ms=512.44 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=02596e90-8532-417f-b034-bc7251a8351f duration_ms=507.86 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=f1b2d44e-77a1-4faa-b8f5-e9e026b3e27a duration_ms=510.32 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=4fb0ad4b-64bb-42e5-a48a-7503e9774302 duration_ms=516.95 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=953df9fa-5c78-4d8b-9692-01876ba24f6a duration_ms=503.09 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=953df9fa-5c78-4d8b-9692-01876ba24f6a duration_ms=522.68 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=7306927c-b6ea-4d27-9045-9c04fb84ef26 duration_ms=517.73 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=6828ee40-150c-41a0-9549-5617d4552762 duration_ms=517.82 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=7306927c-b6ea-4d27-9045-9c04fb84ef26 duration_ms=540.14 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=6828ee40-150c-41a0-9549-5617d4552762 duration_ms=539.45 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=e80374a4-cfc2-4836-b9a8-436fee0dc2f2 duration_ms=518.45 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=e80374a4-cfc2-4836-b9a8-436fee0dc2f2 duration_ms=537.06 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=cf6cdced-3c96-4c98-a4f4-7cd48b5701cb duration_ms=518.94 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=f851dc9f-31c7-4907-be9f-57c62cda8f96 duration_ms=519.28 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=bb78840a-ad6b-4b33-8f2f-f5c3fd2b62b8 duration_ms=519.65 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=cf6cdced-3c96-4c98-a4f4-7cd48b5701cb duration_ms=537.46 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=f851dc9f-31c7-4907-be9f-57c62cda8f96 duration_ms=537.4 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=bb78840a-ad6b-4b33-8f2f-f5c3fd2b62b8 duration_ms=538.09 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=3af453b6-e6f5-4cb2-a530-b696a6e8e000 duration_ms=521.58 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=3af453b6-e6f5-4cb2-a530-b696a6e8e000 duration_ms=539.79 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=4a7be67b-da55-4fa8-be80-9d866cebc7a7 duration_ms=524.15 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=4a7be67b-da55-4fa8-be80-9d866cebc7a7 duration_ms=543.62 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=805d2fbb-598f-4aaa-8578-e73ef393854b duration_ms=524.93 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=805d2fbb-598f-4aaa-8578-e73ef393854b duration_ms=544.59 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=3c02f2fc-401b-48b1-92d3-1d46a69a66c9 duration_ms=541.05 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=3c02f2fc-401b-48b1-92d3-1d46a69a66c9 duration_ms=559.98 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=c5ed97c8-0de7-48b7-8c5e-f3e677cfe3bc duration_ms=542.27 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=c5ed97c8-0de7-48b7-8c5e-f3e677cfe3bc duration_ms=559.35 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=765d286e-262f-43d7-8a67-668d1cc9d06d duration_ms=561.47 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=765d286e-262f-43d7-8a67-668d1cc9d06d duration_ms=585.1 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=7e177201-d059-4a1d-9e47-6a9dd92c3385 duration_ms=562.73 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=7e177201-d059-4a1d-9e47-6a9dd92c3385 duration_ms=586.78 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=95625c42-1cad-4e03-8404-d728cfa00de4 duration_ms=567.87 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=95625c42-1cad-4e03-8404-d728cfa00de4 duration_ms=588.21 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=79118800-df14-4ac9-b63e-3e13ab87311e duration_ms=574.87 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=79118800-df14-4ac9-b63e-3e13ab87311e duration_ms=596.65 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=ffe0af9a-2b9b-49a6-b2e4-a608cea39239 duration_ms=574.96 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=ffe0af9a-2b9b-49a6-b2e4-a608cea39239 duration_ms=594.85 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=491589d5-5589-404b-8299-46591310e63a duration_ms=574.61 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=491589d5-5589-404b-8299-46591310e63a duration_ms=593.8 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=5ca71b2b-1df4-42b7-aba2-a4edfaa210a2 duration_ms=584.73 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=5ca71b2b-1df4-42b7-aba2-a4edfaa210a2 duration_ms=606.37 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=0b343bb8-e574-4b70-a735-5565991e6161 general_util=0.62 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=1d5f1d54-8dd3-4efd-9e20-4ec0950be7d0 general_util=0.62 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=713a1c36-0048-4fae-8a75-0635882b8939 general_util=0.62 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=ce32cb85-f4d3-4623-9cf6-1608be0d070d general_util=0.62 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=98a6580c-57d4-4882-b3b2-e5624b676bb2 general_util=0.62 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=720aa89f-db51-4861-87bd-9a8b1176d71a general_util=0.64 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=bdbca9d8-6ad6-4a28-af08-a229fc78e6ed general_util=0.64 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=3061aa1e-808f-43c6-8d6f-016af57a4443 general_util=0.64 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=b3aa3803-2138-4fd3-9428-e328305865d7 general_util=0.66 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=718b61df-3e45-45b3-b74f-9971b3ca8cdb general_util=0.68 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=c678b615-a253-46d0-a84a-c7fa57d3ebe1 general_util=0.68 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=b095dc31-6ac3-4544-8da4-a9ba34c5f44c general_util=0.72 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=19c6f3f0-e304-4eaa-836d-3847428f979a general_util=0.78 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=2d58bbc3-17d9-4a78-955a-dd821257fd0a general_util=0.78 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=28dcb860-3a08-4ad3-83e6-a296ff3ba515 general_util=0.8 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=6bf403a3-fb55-4936-8e1b-4b617790af78 general_util=0.8 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=1f8b817f-9135-49be-8870-988f42c370a5 general_util=0.82 tier=free
+2026-03-14 07:15:06 [info     ] general_pool_high              correlation_id=230cba35-aee1-4da7-95e4-9b2cabaceb04 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=5b3cc88e-2688-4602-a1f0-9fd72f344f8f general_util=0.82 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=33b8d757-03db-454b-b413-36532a0f89f3 general_util=0.82 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=323ebd12-0a6f-4eeb-bee0-1b4d1027ae3b general_util=0.82 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=70ed4e7b-6457-4268-9a82-c89333f7d91b general_util=0.82 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=0fb49642-0879-40f3-8eea-4f0465103369 general_util=0.82 tier=free
+2026-03-14 07:15:06 [info     ] free_routed_overflow           correlation_id=520ebda1-08e3-439e-9af4-87e010384cec general_util=0.82 tier=free
+2026-03-14 07:15:06 [info     ] general_pool_high              correlation_id=16f5b141-19ee-4eaa-8eb7-78ee6df58f64 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:06 [warning  ] free_shed                      correlation_id=63e71cff-1cb8-40b0-b02f-ec0c3873e1d4 overflow_util=0.9 shed_prob=0.4999999999999999 tier=free
+2026-03-14 07:15:06 [warning  ] request_shed                   correlation_id=63e71cff-1cb8-40b0-b02f-ec0c3873e1d4 user_id=load_free_56
+2026-03-14 07:15:06 [info     ] general_pool_high              correlation_id=49453d43-a2ac-4db5-bac8-1b63677706c3 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:06 [info     ] general_pool_high              correlation_id=698efa9f-3d8f-428c-9db2-f8af37673591 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:06 [warning  ] free_shed                      correlation_id=75110113-bebc-46d0-8ffe-07db736f54c9 overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:06 [warning  ] request_shed                   correlation_id=75110113-bebc-46d0-8ffe-07db736f54c9 user_id=load_free_6
+2026-03-14 07:15:06 [info     ] general_pool_high              correlation_id=4426d5bc-5162-43fc-b739-9bad25742563 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:06 [warning  ] free_shed                      correlation_id=69c1bf8c-7a8c-421a-82c5-4f937b1e9702 overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:06 [warning  ] request_shed                   correlation_id=69c1bf8c-7a8c-421a-82c5-4f937b1e9702 user_id=load_free_43
+2026-03-14 07:15:06 [warning  ] free_shed                      correlation_id=2a807359-3a54-4e92-bed7-dbdb30042a10 overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:06 [warning  ] request_shed                   correlation_id=2a807359-3a54-4e92-bed7-dbdb30042a10 user_id=load_free_21
+2026-03-14 07:15:06 [warning  ] free_shed                      correlation_id=7fe30fbc-4602-44f9-99c6-72fa54949a68 overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:06 [warning  ] request_shed                   correlation_id=7fe30fbc-4602-44f9-99c6-72fa54949a68 user_id=load_free_48
+2026-03-14 07:15:06 [info     ] general_pool_high              correlation_id=5bd58383-6ae2-43a9-8363-b8f0ebccad87 fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:06 [warning  ] free_shed                      correlation_id=0fa1ddba-92a3-432e-8607-265bb4652fb3 overflow_util=1.0 shed_prob=0.9999999999999998 tier=free
+2026-03-14 07:15:06 [warning  ] request_shed                   correlation_id=0fa1ddba-92a3-432e-8607-265bb4652fb3 user_id=load_free_39
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=63e71cff-1cb8-40b0-b02f-ec0c3873e1d4 duration_ms=50.53 method=POST path=/chat status=503
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=75110113-bebc-46d0-8ffe-07db736f54c9 duration_ms=63.13 method=POST path=/chat status=503
+2026-03-14 07:15:06 [info     ] general_pool_high              correlation_id=85d3a17e-c38f-4816-8638-ce5ef1fb7e1f fallback=overflow tier=premium utilization=0.82
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=69c1bf8c-7a8c-421a-82c5-4f937b1e9702 duration_ms=59.26 method=POST path=/chat status=503
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=2a807359-3a54-4e92-bed7-dbdb30042a10 duration_ms=62.49 method=POST path=/chat status=503
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=7fe30fbc-4602-44f9-99c6-72fa54949a68 duration_ms=58.79 method=POST path=/chat status=503
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=0fa1ddba-92a3-432e-8607-265bb4652fb3 duration_ms=59.92 method=POST path=/chat status=503
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=33f4a1fd-f6fb-4c2d-bafc-b355bff5ad7d duration_ms=177.25 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=dc4c5914-1fc6-4a83-9745-65bb5b09fda2 duration_ms=178.2 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=aee63180-476a-4e22-9bc3-60a6837ea83f duration_ms=178.26 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=25100b55-7f01-4016-8108-17980b675be2 duration_ms=195.76 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=4de1593d-6695-4ef5-9f77-0aaf6efb68fe duration_ms=196.33 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=8fb05a5d-e073-490a-b93b-223c184d844c duration_ms=202.01 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=a3e33e72-f542-48d7-b068-796f53447002 duration_ms=202.03 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=a646c5ad-e91b-4766-9f4f-ea4c5ae7e43d duration_ms=215.25 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=8c245f75-251b-4fd9-8bbe-b652b1751d4b duration_ms=214.26 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=7bf5af6e-f79b-49c1-99ae-2e1c99af05c7 duration_ms=221.78 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=ce74d0f1-8fb4-446e-9e31-383a29412913 duration_ms=246.12 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=e612c85a-699c-4c3d-920d-1201ea0f8b52 duration_ms=250.55 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=230cba35-aee1-4da7-95e4-9b2cabaceb04 duration_ms=250.31 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=ec924bce-feaf-4287-add5-92914aaaac3a duration_ms=249.9 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=a340af6b-b9c2-482d-885d-85d9f76e927f duration_ms=251.51 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=5184ab22-2daa-4118-b8c8-10ab6f9b6eb2 duration_ms=265.6 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=698efa9f-3d8f-428c-9db2-f8af37673591 duration_ms=272.59 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=15098ba8-dc32-4cad-a938-d59b90219a7d duration_ms=272.66 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=19688361-cd53-4bae-86a7-00b36d83bdef duration_ms=271.65 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=e066b798-5fab-427b-85f5-e4818e36a61d duration_ms=274.45 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=dd618804-5ad9-4710-897c-437e42593fdf duration_ms=301.46 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=936a282e-ddd1-435d-827b-87133cbe38b2 duration_ms=321.86 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=8ca99a56-0d12-4fe2-928e-77ff70919fc0 duration_ms=327.59 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=da6a274d-3217-48e5-88d9-a6ca1382aba7 duration_ms=327.97 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=1d5f1d54-8dd3-4efd-9e20-4ec0950be7d0 duration_ms=341.04 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=50495a36-1608-4bbf-ab7a-3bc5a880deb1 duration_ms=343.87 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=94241364-4d6a-428d-ace3-23c9c5d7ff8a duration_ms=347.11 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=16f5b141-19ee-4eaa-8eb7-78ee6df58f64 duration_ms=342.29 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=a8a74f29-a016-4c7b-a4a0-ca4e08107260 duration_ms=343.62 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=a916dd71-59bc-4ff7-82d6-9464e70d5093 duration_ms=357.21 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=98a6580c-57d4-4882-b3b2-e5624b676bb2 duration_ms=364.09 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=1893b722-ea1b-4061-9dc3-32cf0bdd31d0 duration_ms=366.71 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=49453d43-a2ac-4db5-bac8-1b63677706c3 duration_ms=375.58 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=1d60e7ec-7f31-40bd-a918-7be3d72deb03 duration_ms=383.79 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=0fb49642-0879-40f3-8eea-4f0465103369 duration_ms=382.97 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=8ccfcdce-6e84-48df-8c39-3cc506642fe3 duration_ms=381.26 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=882513c5-9718-48b4-acc4-4786e24cd919 duration_ms=390.4 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=a687b5d2-2c3e-4be3-85b0-1ac63add6277 duration_ms=386.86 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=365403d7-221b-4bab-8723-2006cd729785 duration_ms=388.34 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=1c806eae-720b-48ca-8f0d-91373fc1a2e2 duration_ms=389.18 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=520ebda1-08e3-439e-9af4-87e010384cec duration_ms=413.18 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=462a0bae-1d16-478b-86cc-978e6b4abf48 duration_ms=407.09 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=a05f5a9f-0237-429c-819a-0396147e0712 duration_ms=413.39 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=e529dda1-f088-46a5-98a7-411e4746a86f duration_ms=411.1 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=137cc383-40ea-45c4-8d59-31f47ffe5c23 duration_ms=405.13 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=251e14db-f3d0-4b5b-a244-0072237302b4 duration_ms=412.19 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=e101d991-c734-4dd4-8e47-765f5282e6fc duration_ms=423.06 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=5b3cc88e-2688-4602-a1f0-9fd72f344f8f duration_ms=430.23 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=755aecdc-d3bb-4019-8c3d-4164b7d1d330 duration_ms=430.04 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=1f8b817f-9135-49be-8870-988f42c370a5 duration_ms=433.98 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=720aa89f-db51-4861-87bd-9a8b1176d71a duration_ms=437.29 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=71b04dda-d4b7-4ccf-b7ed-a0ddafb485f0 duration_ms=437.98 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=0b343bb8-e574-4b70-a735-5565991e6161 duration_ms=445.43 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=28dcb860-3a08-4ad3-83e6-a296ff3ba515 duration_ms=441.64 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=071101b9-9da5-426c-9feb-a704f8484177 duration_ms=443.81 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=19c6f3f0-e304-4eaa-836d-3847428f979a duration_ms=453.89 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=48286c0d-e4c1-4bc5-862a-e6cdc44020d6 duration_ms=467.85 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=567bc6a0-b522-4252-b29f-493babb85a92 duration_ms=467.3 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=22c90215-081f-430e-8419-ef167978614f duration_ms=465.07 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=2de3bf6f-671d-4a25-a084-349e37d4baed duration_ms=475.15 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=4426d5bc-5162-43fc-b739-9bad25742563 duration_ms=473.21 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=5bd58383-6ae2-43a9-8363-b8f0ebccad87 duration_ms=473.52 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=c678b615-a253-46d0-a84a-c7fa57d3ebe1 duration_ms=484.4 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=b095dc31-6ac3-4544-8da4-a9ba34c5f44c duration_ms=482.04 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=713a1c36-0048-4fae-8a75-0635882b8939 duration_ms=488.19 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=b3aa3803-2138-4fd3-9428-e328305865d7 duration_ms=496.25 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=04abc50d-a4a6-45fc-80f6-72385b2002b1 duration_ms=498.02 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=1efd7c97-685f-4f9c-887a-86a96911417a duration_ms=490.1 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=491e171d-e49a-4085-84e1-0ddbe8c7142b duration_ms=490.2 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=b271c71d-13c6-4086-93f4-7334825bb164 duration_ms=505.8 method=POST path=/chat status=200
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=2d58bbc3-17d9-4a78-955a-dd821257fd0a duration_ms=513.11 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=70ed4e7b-6457-4268-9a82-c89333f7d91b duration_ms=513.44 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=70ed4e7b-6457-4268-9a82-c89333f7d91b duration_ms=534.76 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=718b61df-3e45-45b3-b74f-9971b3ca8cdb duration_ms=521.5 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=718b61df-3e45-45b3-b74f-9971b3ca8cdb duration_ms=538.16 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=bdbca9d8-6ad6-4a28-af08-a229fc78e6ed duration_ms=536.82 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=bdbca9d8-6ad6-4a28-af08-a229fc78e6ed duration_ms=554.0 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=323ebd12-0a6f-4eeb-bee0-1b4d1027ae3b duration_ms=538.89 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=323ebd12-0a6f-4eeb-bee0-1b4d1027ae3b duration_ms=556.71 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=3061aa1e-808f-43c6-8d6f-016af57a4443 duration_ms=541.71 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=3061aa1e-808f-43c6-8d6f-016af57a4443 duration_ms=563.3 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=420cbdd6-0690-4032-9d24-2248b1c59545 duration_ms=540.08 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=420cbdd6-0690-4032-9d24-2248b1c59545 duration_ms=558.31 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=6bf403a3-fb55-4936-8e1b-4b617790af78 duration_ms=550.77 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=6bf403a3-fb55-4936-8e1b-4b617790af78 duration_ms=569.58 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=e1742089-0bd5-4967-a340-0876c3bfdbee duration_ms=566.24 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=e1742089-0bd5-4967-a340-0876c3bfdbee duration_ms=586.8 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=1731cc80-3637-43ef-bd06-a5495af210f2 duration_ms=565.33 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=1731cc80-3637-43ef-bd06-a5495af210f2 duration_ms=583.2 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=ce32cb85-f4d3-4623-9cf6-1608be0d070d duration_ms=585.06 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=ce32cb85-f4d3-4623-9cf6-1608be0d070d duration_ms=602.5 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=d445d510-7a04-46d0-a6d0-e5053c2cad19 duration_ms=589.93 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=d445d510-7a04-46d0-a6d0-e5053c2cad19 duration_ms=606.56 method=POST path=/chat status=200
+2026-03-14 07:15:06 [warning  ] slow_operation                 correlation_id=33b8d757-03db-454b-b413-36532a0f89f3 duration_ms=593.14 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:06 [info     ] request_completed              correlation_id=33b8d757-03db-454b-b413-36532a0f89f3 duration_ms=612.3 method=POST path=/chat status=200
+2026-03-14 07:15:07 [warning  ] slow_operation                 correlation_id=85d3a17e-c38f-4816-8638-ce5ef1fb7e1f duration_ms=658.73 operation=MessageProcessor.process threshold_ms=500
+2026-03-14 07:15:07 [info     ] request_completed              correlation_id=85d3a17e-c38f-4816-8638-ce5ef1fb7e1f duration_ms=674.49 method=POST path=/chat status=200
+
+--- Extreme Load Results ---
+  enterprise:
+    Requests: 50, Success: 50 (100.0%)
+    p50: 219.9ms
+    p95: 302.5ms
+    p99: 312.8ms
+  free:
+    Requests: 300, Success: 257 (85.7%)
+    p50: 448.2ms
+    p95: 603.2ms
+    p99: 627.9ms
+  premium:
+    Requests: 100, Success: 100 (100.0%)
+    p50: 343.7ms
+    p95: 473.7ms
+    p99: 675.2ms
+PASSED
+
+=============================== warnings summary ===============================
+tests/test_load.py: 300 warnings
+  /Users/gokulverma/freelance/rumik-assessment/tests/test_load.py:107: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+tests/test_load.py: 300 warnings
+  /Users/gokulverma/freelance/rumik-assessment/tests/test_load.py:108: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+tests/test_load.py: 300 warnings
+  /Users/gokulverma/freelance/rumik-assessment/tests/test_load.py:119: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+tests/test_load.py: 228 warnings
+  /app/app/workers/processor.py:278: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    "started_at": datetime.utcnow(),
+
+tests/test_load.py: 620 warnings
+  /app/app/workers/processor.py:302: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    "created_at": datetime.utcnow(),
+
+tests/test_load.py: 620 warnings
+  /app/app/workers/processor.py:322: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    "created_at": datetime.utcnow(),
+
+tests/test_load.py: 620 warnings
+  /app/app/workers/processor.py:249: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    {"$set": {"last_active_at": datetime.utcnow()}},
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 3 passed, 2988 warnings in 5.40s =======================

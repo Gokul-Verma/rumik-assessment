@@ -146,6 +146,10 @@ docker-compose run --rm app pytest tests/test_queries.py -v
 docker-compose run --rm app pytest tests/test_load.py -v -s
 ```
 
+### Test Results
+
+Load test results are stored in [`test_results/load_test_results.txt`](test_results/load_test_results.txt).
+
 ## API Endpoints
 
 | Endpoint | Method | Description |
