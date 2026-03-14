@@ -31,7 +31,7 @@ class SafetyResult:
 JAILBREAK_PATTERNS = [
     re.compile(r"ignore\s+(all\s+)?previous\s+(instructions|prompts|rules)", re.I),
     re.compile(r"you\s+are\s+now\s+(DAN|a\s+new|an?\s+unrestricted)", re.I),
-    re.compile(r"pretend\s+(you|to\s+be)\s+(are\s+)?(a\s+)?(?:evil|unrestricted|unfiltered)", re.I),
+    re.compile(r"pretend\s+(you|to\s+be)\s+(are\s+)?(a\s+)?(?:evil|unrestricted|unfiltered|DAN)", re.I),
     re.compile(r"jailbreak|bypass\s+(your\s+)?filters", re.I),
     re.compile(r"act\s+as\s+(if\s+)?(you\s+have\s+)?no\s+(restrictions|rules|limits)", re.I),
     re.compile(r"do\s+anything\s+now|DAN\s+mode", re.I),
@@ -42,10 +42,11 @@ JAILBREAK_PATTERNS = [
 ]
 
 NSFW_PATTERNS = [
-    re.compile(r"\b(explicit\s+sexual|pornograph|xxx|hentai)\b", re.I),
+    re.compile(r"\b(explicit\s*sexual|pornograph|xxx|hentai)\b", re.I),
     re.compile(r"\b(nude|naked)\s+(image|photo|pic)", re.I),
-    re.compile(r"write\s+(me\s+)?(\w+\s+)*(erotic|sexual)\s+(\w+\s+)*(story|fiction|content)", re.I),
+    re.compile(r"(write|give|tell|create)\s+(me\s+)?.*(erotic|sexual|nsfw)\s+.*(story|fiction|content|scene)", re.I),
     re.compile(r"sext(ing)?\s+(with\s+)?me", re.I),
+    re.compile(r"\b(sexual|erotic|nsfw)\s+(story|content|fiction|scene)\b", re.I),
 ]
 
 HARASSMENT_PATTERNS = [
@@ -61,9 +62,10 @@ SELF_HARM_PATTERNS = [
 ]
 
 ILLEGAL_PATTERNS = [
-    re.compile(r"how\s+to\s+(make|build|create)\s+(a\s+)?(bomb|explosive|weapon)", re.I),
-    re.compile(r"how\s+to\s+(hack|crack|break\s+into)\s+(a\s+)?(bank|account|system)", re.I),
+    re.compile(r"how\s+(to|do\s+\w+|can\s+\w+)\s+(make|build|create)\s+(a\s+)?(bomb|explosive|weapon)", re.I),
+    re.compile(r"how\s+(to|do\s+\w+|can\s+\w+)\s+(hack|crack|break\s+into)\s+(a\s+)?(bank|account|system)", re.I),
     re.compile(r"(synthesize|manufacture|cook)\s+(meth|drugs|cocaine|heroin)", re.I),
+    re.compile(r"\b(make|build|create)\s+(a\s+)?(bomb|explosive|weapon)\b", re.I),
 ]
 
 CATEGORY_PATTERNS: list[tuple[SafetyCategory, list[re.Pattern]]] = [
